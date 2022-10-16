@@ -50,11 +50,13 @@
     <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Factory.cs" />
     <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Test.cs" />
     <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Watch.cs" />
+    <Compile Include="Behavioral Design Patterns\Builder\Builder.cs" />
+    <Compile Include="Behavioral Design Patterns\Builder\Computer.cs" />
+    <Compile Include="Behavioral Design Patterns\Builder\Director.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Builder\" />
     <Folder Include="Behavioral Design Patterns\Prototype\" />
     <Folder Include="Behavioral Design Patterns\Singleton\" />
     <Folder Include="Creational Design Patterns\" />

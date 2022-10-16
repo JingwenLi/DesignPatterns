@@ -2,7 +2,7 @@
 {
 	public class Director
     {
-        private Builder builder = null;
+        protected Builder builder = null;
 
         public Director(Builder builder)
         {
@@ -16,7 +16,7 @@
             builder.BuildGraphicsCard();
             builder.BuildMainBoard();
             builder.BuildMemory();
-            return builder.computer;
+            return builder.GetComputer();
         }
     }
 }

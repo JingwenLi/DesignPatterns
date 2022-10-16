@@ -4,13 +4,18 @@ namespace DesignPatterns.Builder
 {
 	public abstract class Builder
     {
-        public Computer computer = new Computer();
+        protected Computer computer = new Computer();
 
         public abstract void BuildCPU();
         public abstract void BuildMemory();
         public abstract void BuildDisk();
         public abstract void BuildGraphicsCard();
         public abstract void BuildMainBoard();
+
+        public Computer GetComputer()
+        {
+            return computer;
+        }
     }
 
     public class CostEffectiveBuilder : Builder

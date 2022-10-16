@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns
 {
-	internal class Example
+	public class Example
 	{
 		public static void Run()
 		{

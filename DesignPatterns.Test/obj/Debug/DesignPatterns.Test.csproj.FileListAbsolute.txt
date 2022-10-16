@@ -13,3 +13,5 @@ C:\Users\nancy.li.CORP\OneDrive - WiseTech Global Pty Ltd\Learning Projects\Desi
 C:\Users\nancy.li.CORP\OneDrive - WiseTech Global Pty Ltd\Learning Projects\DesignPatterns\DesignPatterns.Test\obj\Debug\DesignPatterns.Test.csproj.CopyComplete
 C:\Users\nancy.li.CORP\OneDrive - WiseTech Global Pty Ltd\Learning Projects\DesignPatterns\DesignPatterns.Test\obj\Debug\DesignPatterns.Test.dll
 C:\Users\nancy.li.CORP\OneDrive - WiseTech Global Pty Ltd\Learning Projects\DesignPatterns\DesignPatterns.Test\obj\Debug\DesignPatterns.Test.pdb
+C:\Users\nancy.li.CORP\OneDrive - WiseTech Global Pty Ltd\Learning Projects\DesignPatterns\DesignPatterns.Test\bin\Debug\DesignPatterns.dll
+C:\Users\nancy.li.CORP\OneDrive - WiseTech Global Pty Ltd\Learning Projects\DesignPatterns\DesignPatterns.Test\bin\Debug\DesignPatterns.pdb

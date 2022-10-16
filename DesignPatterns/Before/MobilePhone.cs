@@ -8,7 +8,7 @@ namespace DesignPatterns
 
         public void Call()
         {
-            Console.WriteLine("Calling...");
+            Console.WriteLine($"Call with {GetName()}");
         }
     }
 

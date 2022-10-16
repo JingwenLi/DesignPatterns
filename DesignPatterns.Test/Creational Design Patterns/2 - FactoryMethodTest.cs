@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using DesignPatterns.FactoryMethod;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatterns.Test
 {
@@ -8,6 +9,8 @@ namespace DesignPatterns.Test
 		[TestMethod]
 		public void TestMethod1()
 		{
+			new XiaoMiFactory().CreateMobilePhone().Call();
+			new HuaWeiFactory().CreateMobilePhone().Call();
 		}
 	}
 }

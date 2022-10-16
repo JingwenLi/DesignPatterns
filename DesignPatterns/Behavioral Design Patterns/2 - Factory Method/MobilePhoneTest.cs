@@ -2,7 +2,7 @@
 {
 	public class MobilePhoneTest
     {
-        public void Call(IMobilePhoneFactory factory)
+        public void TestCall(IMobilePhoneFactory factory)
         {
             factory.CreateMobilePhone().Call();
         }

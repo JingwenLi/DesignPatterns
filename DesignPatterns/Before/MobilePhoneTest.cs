@@ -2,7 +2,7 @@
 {
     public class MobilePhoneTest
     {
-        void Call(string name)
+        public void TestCall(string name)
         {
             MobilePhone phone = null;
             if (name.Equals("Vivo"))

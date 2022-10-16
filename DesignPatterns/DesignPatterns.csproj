@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Before\MobilePhone.cs" />
-    <Compile Include="Before\MobilePhoneTest.cs" />
+    <Compile Include="Creational Design Patterns\0 - Before\MobilePhone.cs" />
+    <Compile Include="Creational Design Patterns\0 - Before\MobilePhoneTest.cs" />
     <Compile Include="Creational Design Patterns\1 - Simple Factory\SimpleMobilePhoneFactory.cs" />
     <Compile Include="Creational Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />

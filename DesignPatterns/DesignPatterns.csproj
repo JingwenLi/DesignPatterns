@@ -47,11 +47,13 @@
     <Compile Include="Behavioral Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
     <Compile Include="Behavioral Design Patterns\1- SimpleFactory\MobilePhoneTest.cs" />
     <Compile Include="Behavioral Design Patterns\1- SimpleFactory\SimpleMobilePhoneFactory.cs" />
+    <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Factory.cs" />
+    <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Test.cs" />
+    <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Watch.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Abstract Factory\" />
     <Folder Include="Behavioral Design Patterns\Builder\" />
     <Folder Include="Behavioral Design Patterns\Prototype\" />
     <Folder Include="Behavioral Design Patterns\Singleton\" />

@@ -4,10 +4,8 @@
     {
         public void Call()
         {
-            var factory = new VivoPhoneFactory();
-            var phone = factory.CreateMobilePhone();
-
-            phone?.Call();
+            new VivoPhoneFactory().CreateMobilePhone().Call();
+            new OppoPhoneFactory().CreateMobilePhone().Call();
         }
     }
 }

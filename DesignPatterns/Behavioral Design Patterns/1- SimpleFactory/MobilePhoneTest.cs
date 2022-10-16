@@ -5,9 +5,8 @@
         public void Call(string type)
         {
             var factory = new SimpleMobilePhoneFactory();
-            var phone = factory.CreateMobilePhone(type);
-
-            phone?.Call();
+            factory.CreateMobilePhone("Vivo").Call();
+            factory.CreateMobilePhone("Oppo").Call();
         }
     }
 }

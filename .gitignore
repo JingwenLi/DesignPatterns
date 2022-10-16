@@ -2,10 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/DesignPatterns/.vs/DesignPatterns/FileContentIndex
 /DesignPatterns/bin/Debug
+/DesignPatterns/obj/Debug
+/DesignPatterns.Test/bin/Debug
+/DesignPatterns.Test/obj/Debug
 /.vs/DesignPatterns/v17
 /.vs/VSWorkspaceState.json
+/DesignPatterns/.vs/DesignPatterns/FileContentIndex
 /DesignPatterns/.vs/DesignPatterns/v17/.suo
-/DesignPatterns/obj/Debug
 /DesignPatterns/.vs/DesignPatterns/v17/TestStore/0

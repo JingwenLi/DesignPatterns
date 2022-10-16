@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational Design Patterns\6 - SingletonTest.cs" />
     <Compile Include="Creational Design Patterns\5 - PrototypeTest.cs" />
     <Compile Include="Creational Design Patterns\4 - BuilderTest.cs" />
     <Compile Include="Creational Design Patterns\3 - AbstractFactoryTest.cs" />

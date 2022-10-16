@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Singleton
 {
-    class InnerClassSignleton
+    public class InnerClassSignleton
     {
         private InnerClassSignleton()
         {

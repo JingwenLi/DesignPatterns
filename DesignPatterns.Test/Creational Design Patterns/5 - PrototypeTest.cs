@@ -6,7 +6,7 @@ namespace DesignPatterns.Test
 	public class PrototypeTest
 	{
 		[TestMethod]
-		public void TestMethod1()
+		public void TestMethod()
 		{
 		}
 	}

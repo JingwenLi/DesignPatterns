@@ -7,7 +7,7 @@ namespace DesignPatterns.Test
 	public class FactoryMethodTest
 	{
 		[TestMethod]
-		public void TestMethod1()
+		public void TestMethod()
 		{
 			new XiaoMiFactory().CreateMobilePhone().Call();
 			new HuaWeiFactory().CreateMobilePhone().Call();

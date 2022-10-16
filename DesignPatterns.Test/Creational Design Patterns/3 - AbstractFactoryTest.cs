@@ -6,7 +6,7 @@ namespace DesignPatterns.Test
 	public class AbstractFactoryTest
 	{
 		[TestMethod]
-		public void TestMethod1()
+		public void TestMethod()
 		{
 		}
 	}

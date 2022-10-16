@@ -4,21 +4,16 @@ namespace DesignPatterns.Builder
 {
 	public abstract class Builder
     {
-        protected Computer computer = new Computer();
+        public Computer computer = new Computer();
 
         public abstract void BuildCPU();
         public abstract void BuildMemory();
         public abstract void BuildDisk();
         public abstract void BuildGraphicsCard();
         public abstract void BuildMainBoard();
-
-        public Computer CreateComputer()
-        {
-            return computer;
-        }
     }
 
-    class CostEffectiveBuilder : Builder
+    public class CostEffectiveBuilder : Builder
     {
         public override void BuildCPU()
         {
@@ -51,7 +46,7 @@ namespace DesignPatterns.Builder
         }
     }
 
-    class HighPerformanceBuilder : Builder
+    public class HighPerformanceBuilder : Builder
     {
         public override void BuildCPU()
         {

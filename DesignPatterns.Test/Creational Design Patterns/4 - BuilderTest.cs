@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using DesignPatterns.Builder;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatterns.Test
 {
@@ -8,6 +9,8 @@ namespace DesignPatterns.Test
 		[TestMethod]
 		public void TestMethod()
 		{
+			new Director(new CostEffectiveBuilder()).AssembleComputer();
+			new Director(new HighPerformanceBuilder()).AssembleComputer();
 		}
 	}
 }

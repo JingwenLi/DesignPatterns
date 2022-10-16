@@ -16,7 +16,7 @@
             builder.BuildGraphicsCard();
             builder.BuildMainBoard();
             builder.BuildMemory();
-            return builder.CreateComputer();
+            return builder.computer;
         }
     }
 }

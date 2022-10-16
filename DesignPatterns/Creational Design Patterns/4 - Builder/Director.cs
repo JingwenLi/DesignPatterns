@@ -9,7 +9,7 @@
             this.builder = builder;
         }
 
-        public Computer AssembleComputer()
+        public Computer BuildComputer()
         {
             builder.BuildCPU();
             builder.BuildDisk();

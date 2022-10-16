@@ -56,11 +56,12 @@
     <Compile Include="Behavioral Design Patterns\4 - Builder\Computer.cs" />
     <Compile Include="Behavioral Design Patterns\4 - Builder\Director.cs" />
     <Compile Include="Behavioral Design Patterns\4 - Builder\Test.cs" />
+    <Compile Include="Behavioral Design Patterns\5 - Prototype\Prototype.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Behavioral Design Patterns\5 - Prototype\note.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Prototype\" />
     <Folder Include="Behavioral Design Patterns\Singleton\" />
     <Folder Include="Creational Design Patterns\" />
     <Folder Include="Structural Design Patterns\" />

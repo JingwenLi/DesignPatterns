@@ -45,7 +45,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\" />
+    <Folder Include="Behavioral Design Patterns\Abstract Factory\" />
+    <Folder Include="Behavioral Design Patterns\Builder\" />
+    <Folder Include="Behavioral Design Patterns\Factory Method\" />
+    <Folder Include="Behavioral Design Patterns\Prototype\" />
+    <Folder Include="Behavioral Design Patterns\Singleton\" />
     <Folder Include="Creational Design Patterns\" />
     <Folder Include="Structural Design Patterns\" />
   </ItemGroup>

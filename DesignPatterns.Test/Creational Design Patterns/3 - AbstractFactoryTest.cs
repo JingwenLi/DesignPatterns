@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using DesignPatterns.AbstractFactory;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatterns.Test
 {
@@ -6,8 +7,17 @@ namespace DesignPatterns.Test
 	public class AbstractFactoryTest
 	{
 		[TestMethod]
-		public void TestMethod()
+		public void TestCall()
 		{
+			new XiaoMiFactory().CreateMobilePhone().Call();
+			new HuaWeiFactory().CreateMobilePhone().Call();
+		}
+
+		[TestMethod]
+		public void TestGetTime()
+		{
+			new XiaoMiFactory().CreateWatch().GetTime();
+			new HuaWeiFactory().CreateWatch().GetTime();
 		}
 	}
 }

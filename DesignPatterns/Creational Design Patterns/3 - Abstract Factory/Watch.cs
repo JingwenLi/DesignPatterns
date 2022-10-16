@@ -8,7 +8,7 @@ namespace DesignPatterns.AbstractFactory
 
         public void GetTime()
         {
-            Console.WriteLine($"Current Time is {DateTime.Now}");
+            Console.WriteLine($"Current Time is {DateTime.Now} -- {GetName()}");
         }
     }
 

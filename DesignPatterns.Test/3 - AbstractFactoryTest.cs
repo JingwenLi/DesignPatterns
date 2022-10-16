@@ -1,10 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace DesignPatterns.Test
 {
 	[TestClass]
-	public class SimpleFactoryTest
+	public class AbstractFactoryTest
 	{
 		[TestMethod]
 		public void TestMethod1()

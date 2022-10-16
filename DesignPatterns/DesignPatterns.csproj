@@ -44,6 +44,7 @@
     <Compile Include="Before\Coffee.cs" />
     <Compile Include="Before\Example.cs" />
     <Compile Include="Before\CoffeeStore.cs" />
+    <Compile Include="Behavioral Design Patterns\SimpleCoffeeFactory.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

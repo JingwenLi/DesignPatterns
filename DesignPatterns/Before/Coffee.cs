@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.Before
+namespace DesignPatterns
 {
     public abstract class Coffee
     {

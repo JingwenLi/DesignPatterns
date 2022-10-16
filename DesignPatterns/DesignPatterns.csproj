@@ -57,7 +57,6 @@
     <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
     <Compile Include="Creational Design Patterns\4 - Builder\Test.cs" />
     <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Creational Design Patterns\5 - Prototype\note.txt" />
   </ItemGroup>

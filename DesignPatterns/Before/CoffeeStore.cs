@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Before
+﻿namespace DesignPatterns
 {
     public class CoffeeStore
     {

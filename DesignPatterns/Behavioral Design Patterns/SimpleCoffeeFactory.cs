@@ -1,6 +1,4 @@
-﻿using DesignPatterns.Before;
-
-namespace DesignPatterns
+﻿namespace DesignPatterns
 {
 	public class SimpleCoffeeFactory
     {

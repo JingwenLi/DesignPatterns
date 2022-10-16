@@ -49,7 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SimpleFactoryTest.cs" />
+    <Compile Include="5 - PrototypeTest.cs" />
+    <Compile Include="4 - BuilderTest.cs" />
+    <Compile Include="3 - AbstractFactoryTest.cs" />
+    <Compile Include="2 - FactoryMethodTest.cs" />
+    <Compile Include="1 - SimpleFactoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -54,12 +54,13 @@
     <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
     <Compile Include="Creational Design Patterns\4 - Builder\Test.cs" />
     <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
+    <Compile Include="Creational Design Patterns\Singleton\LazySingleton.cs" />
+    <Compile Include="Creational Design Patterns\Singleton\HungrySingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Creational Design Patterns\5 - Prototype\note.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Design Patterns\" />
-    <Folder Include="Creational Design Patterns\Singleton\" />
     <Folder Include="Structural Design Patterns\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

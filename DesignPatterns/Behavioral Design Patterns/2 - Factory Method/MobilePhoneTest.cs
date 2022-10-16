@@ -2,10 +2,9 @@
 {
 	public class MobilePhoneTest
     {
-        public void Call()
+        public void Call(IMobilePhoneFactory factory)
         {
-            new VivoPhoneFactory().CreateMobilePhone().Call();
-            new OppoPhoneFactory().CreateMobilePhone().Call();
+            factory.CreateMobilePhone().Call();
         }
     }
 }

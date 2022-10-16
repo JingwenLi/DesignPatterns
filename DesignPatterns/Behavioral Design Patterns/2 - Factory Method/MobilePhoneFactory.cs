@@ -5,19 +5,19 @@
         MobilePhone CreateMobilePhone();
     }
 
-    public class VivoPhoneFactory : IMobilePhoneFactory
+    public class XiaoMiFactory : IMobilePhoneFactory
     {
         public MobilePhone CreateMobilePhone()
         {
-            return new VivoPhone();
+            return new XiaoMiPhone();
         }
     }
 
-    public class OppoPhoneFactory : IMobilePhoneFactory
+    public class HuaWeiFactory : IMobilePhoneFactory
     {
         public MobilePhone CreateMobilePhone()
         {
-            return new OppoPhone();
+            return new HuaWeiPhone();
         }
     }
 }

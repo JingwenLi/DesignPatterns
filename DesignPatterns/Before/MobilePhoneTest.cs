@@ -5,13 +5,13 @@
         public void TestCall(string name)
         {
             MobilePhone phone = null;
-            if (name.Equals("Vivo"))
+            if (name.Equals("XiaoMi"))
             {
-                phone = new VivoPhone();
+                phone = new XiaoMiPhone();
             }
-            else if (name.Equals("Oppo"))
+            else if (name.Equals("HuaWei"))
             {
-                phone = new OppoPhone();
+                phone = new HuaWeiPhone();
             }
 
             phone?.Call();

@@ -4,13 +4,13 @@
     {
         public MobilePhone CreateMobilePhone(string name)
         {
-            if (name.Equals("Vivo"))
+            if (name.Equals("XiaoMi"))
             {
-                return new VivoPhone();
+                return new XiaoMiPhone();
             }
-            else if (name.Equals("Oppo"))
+            else if (name.Equals("HuaWei"))
             {
-                return new OppoPhone();
+                return new HuaWeiPhone();
             }
 
             return null;

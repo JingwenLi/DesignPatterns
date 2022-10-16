@@ -12,19 +12,19 @@ namespace DesignPatterns
         }
     }
 
-    public class OppoPhone : MobilePhone
+    public class XiaoMiPhone : MobilePhone
     {
          public override string GetName()
          {
-             return "Oppo Phone";
+             return "Xiao Mi Phone";
          }
     }
 
-    public class VivoPhone : MobilePhone
+    public class HuaWeiPhone : MobilePhone
     {
         public override string GetName()
         {
-            return "Vivo Phone";
+            return "Hua Wei Phone";
         }
     }
 }

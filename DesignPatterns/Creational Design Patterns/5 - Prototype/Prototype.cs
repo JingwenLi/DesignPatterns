@@ -7,9 +7,9 @@ namespace DesignPatterns.Prototype
     [Serializable]
     public abstract class PrototypeClass
     {
-        public string myValue;
+        public int[] myValue;
 
-        public string MyValue
+        public int[] MyValue
         {
             get { return myValue; }
             set { myValue = value; }
@@ -17,12 +17,11 @@ namespace DesignPatterns.Prototype
         public abstract PrototypeClass Clone();
     }
 
-    //浅拷贝
     public class ShallowClone : PrototypeClass
     {
-        public ShallowClone(string value)
+        public ShallowClone(int[] value)
         {
-            this.myValue = value;
+            myValue = value;
         }
 
         public override PrototypeClass Clone()
@@ -31,13 +30,12 @@ namespace DesignPatterns.Prototype
         }
     }
 
-    //深拷贝
     [Serializable]
     public class DeepClone : PrototypeClass
     {
-        public DeepClone(string value)
+        public DeepClone(int[] value)
         {
-            this.myValue = value;
+            myValue = value;
         }
 
         public override PrototypeClass Clone()

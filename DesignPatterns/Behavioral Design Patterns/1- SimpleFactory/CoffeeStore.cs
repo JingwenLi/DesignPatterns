@@ -2,7 +2,6 @@
 {
     public class CoffeeStore
     {
-        /// SimpleFactory
         public Coffee OrderCoffee(string type)
         {
             var factory = new SimpleCoffeeFactory();

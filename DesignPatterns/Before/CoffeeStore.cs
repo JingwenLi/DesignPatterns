@@ -20,16 +20,5 @@
             }
             return coffee;
         }
-
-        public Coffee OrderCoffeeV2(string type)
-        {
-            var factory = new SimpleCoffeeFactory();
-            var coffee = factory.CreateCoffee(type);
-
-            coffee.AddMilk();
-            coffee.AddSugar();
-
-            return coffee;
-        }
     }
 }

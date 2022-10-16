@@ -44,14 +44,16 @@
     <Compile Include="Before\Coffee.cs" />
     <Compile Include="Before\Example.cs" />
     <Compile Include="Before\CoffeeStore.cs" />
-    <Compile Include="Behavioral Design Patterns\SimpleCoffeeFactory.cs" />
+    <Compile Include="Behavioral Design Patterns\Factory Method\CoffeeStore.cs" />
+    <Compile Include="Behavioral Design Patterns\Factory Method\ICoffeeFactory.cs" />
+    <Compile Include="Behavioral Design Patterns\SimpleFactory\CoffeeStore.cs" />
+    <Compile Include="Behavioral Design Patterns\SimpleFactory\SimpleCoffeeFactory.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Design Patterns\Abstract Factory\" />
     <Folder Include="Behavioral Design Patterns\Builder\" />
-    <Folder Include="Behavioral Design Patterns\Factory Method\" />
     <Folder Include="Behavioral Design Patterns\Prototype\" />
     <Folder Include="Behavioral Design Patterns\Singleton\" />
     <Folder Include="Creational Design Patterns\" />

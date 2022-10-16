@@ -43,27 +43,27 @@
   <ItemGroup>
     <Compile Include="Before\MobilePhone.cs" />
     <Compile Include="Before\MobilePhoneTest.cs" />
-    <Compile Include="Behavioral Design Patterns\2 - Factory Method\MobilePhoneTest.cs" />
-    <Compile Include="Behavioral Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
-    <Compile Include="Behavioral Design Patterns\1- SimpleFactory\MobilePhoneTest.cs" />
-    <Compile Include="Behavioral Design Patterns\1- SimpleFactory\SimpleMobilePhoneFactory.cs" />
-    <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Factory.cs" />
-    <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Test.cs" />
-    <Compile Include="Behavioral Design Patterns\3 - Abstract Factory\Watch.cs" />
-    <Compile Include="Behavioral Design Patterns\4 - Builder\Builder.cs" />
-    <Content Include="Behavioral Design Patterns\3 - Abstract Factory\note.txt" />
-    <Content Include="Behavioral Design Patterns\4 - Builder\note.txt" />
-    <Compile Include="Behavioral Design Patterns\4 - Builder\Computer.cs" />
-    <Compile Include="Behavioral Design Patterns\4 - Builder\Director.cs" />
-    <Compile Include="Behavioral Design Patterns\4 - Builder\Test.cs" />
-    <Compile Include="Behavioral Design Patterns\5 - Prototype\Prototype.cs" />
+    <Compile Include="Creational Design Patterns\2 - Factory Method\MobilePhoneTest.cs" />
+    <Compile Include="Creational Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
+    <Compile Include="Creational Design Patterns\1- SimpleFactory\MobilePhoneTest.cs" />
+    <Compile Include="Creational Design Patterns\1- SimpleFactory\SimpleMobilePhoneFactory.cs" />
+    <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
+    <Compile Include="Creational Design Patterns\3 - Abstract Factory\Test.cs" />
+    <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
+    <Compile Include="Creational Design Patterns\4 - Builder\Builder.cs" />
+    <Content Include="Creational Design Patterns\3 - Abstract Factory\note.txt" />
+    <Content Include="Creational Design Patterns\4 - Builder\note.txt" />
+    <Compile Include="Creational Design Patterns\4 - Builder\Computer.cs" />
+    <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
+    <Compile Include="Creational Design Patterns\4 - Builder\Test.cs" />
+    <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Behavioral Design Patterns\5 - Prototype\note.txt" />
+    <Content Include="Creational Design Patterns\5 - Prototype\note.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Singleton\" />
-    <Folder Include="Creational Design Patterns\" />
+    <Folder Include="Behavioral Design Patterns\" />
+    <Folder Include="Creational Design Patterns\Singleton\" />
     <Folder Include="Structural Design Patterns\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

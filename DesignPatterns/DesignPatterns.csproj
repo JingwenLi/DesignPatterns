@@ -52,7 +52,6 @@
     <Content Include="Creational Design Patterns\4 - Builder\note.txt" />
     <Compile Include="Creational Design Patterns\4 - Builder\Computer.cs" />
     <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
-    <Compile Include="Creational Design Patterns\4 - Builder\Test.cs" />
     <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
     <Content Include="Creational Design Patterns\5 - Prototype\note.txt" />
     <Compile Include="Creational Design Patterns\6 - Singleton\InnerClassSignleton.cs" />

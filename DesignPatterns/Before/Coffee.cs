@@ -8,12 +8,12 @@ namespace DesignPatterns
 
         public void AddSugar()
         {
-            Console.WriteLine("加糖");
+            Console.WriteLine("Add Sugar - Done");
         }
 
         public void AddMilk()
         {
-            Console.WriteLine("加奶");
+            Console.WriteLine("Add Milk - Done");
         }
     }
 
@@ -21,7 +21,7 @@ namespace DesignPatterns
     {
         public override string GetName()
         {
-            return "拿铁咖啡";
+            return "LatterCoffee";
         }
     }
 
@@ -29,7 +29,7 @@ namespace DesignPatterns
     {
         public override string GetName()
         {
-            return "美式咖啡";
+            return "AmericanCoffee";
         }
     }
 }

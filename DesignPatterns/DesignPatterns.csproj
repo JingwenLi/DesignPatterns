@@ -54,8 +54,9 @@
     <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
     <Compile Include="Creational Design Patterns\4 - Builder\Test.cs" />
     <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
-    <Compile Include="Creational Design Patterns\Singleton\LazySingleton.cs" />
-    <Compile Include="Creational Design Patterns\Singleton\HungrySingleton.cs" />
+    <Compile Include="Creational Design Patterns\6 - Singleton\InnerClassSignleton.cs" />
+    <Compile Include="Creational Design Patterns\6 - Singleton\LazySingleton.cs" />
+    <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Creational Design Patterns\5 - Prototype\note.txt" />
   </ItemGroup>

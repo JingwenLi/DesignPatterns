@@ -1,19 +1,55 @@
-﻿namespace DesignPatterns.Prototype
+﻿using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
+namespace DesignPatterns.Prototype
 {
-	public abstract class Prototype
+    [Serializable]
+    public abstract class PrototypeClass
     {
-        private string id;
+        public string myValue;
 
-        public Prototype(string id)
+        public string MyValue
         {
-            this.id = id;
+            get { return myValue; }
+            set { myValue = value; }
+        }
+        public abstract PrototypeClass Clone();
+    }
+
+    //浅拷贝
+    public class ShallowClone : PrototypeClass
+    {
+        public ShallowClone(string value)
+        {
+            this.myValue = value;
         }
 
-        public string Id
+        public override PrototypeClass Clone()
         {
-            get { return id; }
+            return (PrototypeClass)this.MemberwiseClone();
+        }
+    }
+
+    //深拷贝
+    [Serializable]
+    public class DeepClone : PrototypeClass
+    {
+        public DeepClone(string value)
+        {
+            this.myValue = value;
         }
 
-        public abstract Prototype Clone();
+        public override PrototypeClass Clone()
+        {
+            PrototypeClass deepObject;
+            var memoryStream = new MemoryStream();
+            var formatter = new BinaryFormatter();
+            formatter.Serialize(memoryStream, this);
+            memoryStream.Position = 0;
+            deepObject = (PrototypeClass)formatter.Deserialize(memoryStream);
+
+            return deepObject;
+        }
     }
 }

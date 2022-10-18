@@ -3,17 +3,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatterns
 {
+    [TestClass]
     public class MobilePhoneTest
     {
-        [TestClass]
-        public class SimpleFactoryTest
+        [TestMethod]
+        public void TestCall()
         {
-            [TestMethod]
-            public void TestCall()
-            {
-                new XiaoMiPhone().Call();
-                new HuaWeiPhone().Call();
-            }
+            new XiaoMiPhone().Call();
+            new HuaWeiPhone().Call();
         }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Creational Design Patterns\6 - Singleton\LazySingleton.cs" />
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="note.txt" />
     <EmbeddedResource Include="Creational Design Patterns\1 - Simple Factory\UML.png" />
   </ItemGroup>
   <ItemGroup>

@@ -1,9 +1,8 @@
-﻿using DesignPatterns.SimpleFactory;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatterns
 {
-    [TestClass]
+	[TestClass]
     public class MobilePhoneTest
     {
         [TestMethod]

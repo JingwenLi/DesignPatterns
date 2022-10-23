@@ -47,6 +47,7 @@
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
     <Content Include="Creational Design Patterns\1 - Simple Factory\note.txt" />
+    <Content Include="Creational Design Patterns\2 - Factory Method\note.txt" />
     <Content Include="Creational Design Patterns\3 - Abstract Factory\note.txt" />
     <Compile Include="Creational Design Patterns\4 - Builder\Builder.cs" />
     <Content Include="Creational Design Patterns\4 - Builder\note.txt" />

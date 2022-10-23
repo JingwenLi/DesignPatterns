@@ -47,6 +47,7 @@
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
     <Content Include="Creational Design Patterns\1 - Simple Factory\note.txt" />
+    <EmbeddedResource Include="UML\5 - Prototype.png" />
     <EmbeddedResource Include="UML\4 - Builder.png" />
     <Content Include="Creational Design Patterns\2 - Factory Method\note.txt" />
     <EmbeddedResource Include="UML\2 - Factory Method.png" />

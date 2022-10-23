@@ -47,10 +47,12 @@
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
     <Content Include="Creational Design Patterns\1 - Simple Factory\note.txt" />
-    <EmbeddedResource Include="Creational Design Patterns\4 - Builder\UML.png" />
+    <EmbeddedResource Include="UML\4 - Builder.png" />
     <Content Include="Creational Design Patterns\2 - Factory Method\note.txt" />
+    <EmbeddedResource Include="UML\2 - Factory Method.png" />
     <Content Include="Creational Design Patterns\3 - Abstract Factory\note.txt" />
     <Compile Include="Creational Design Patterns\4 - Builder\Builder.cs" />
+    <EmbeddedResource Include="UML\3 - Abstract Factory.png" />
     <Content Include="Creational Design Patterns\4 - Builder\note.txt" />
     <Compile Include="Creational Design Patterns\4 - Builder\Computer.cs" />
     <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
@@ -61,7 +63,7 @@
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="note.txt" />
-    <EmbeddedResource Include="Creational Design Patterns\1 - Simple Factory\UML.png" />
+    <EmbeddedResource Include="UML\1 - Simple Factory.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Design Patterns\" />

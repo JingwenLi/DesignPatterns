@@ -10,11 +10,21 @@ namespace DesignPatterns.Test
 		[TestMethod]
 		public void TestBuild()
 		{
-			new Director(new CostEffectiveBuilder()).BuildComputer();
+			var costEffectiveComputer = new Director(new CostEffectiveBuilder()).BuildComputer();
+			Console.WriteLine(costEffectiveComputer.CPU);
+			Console.WriteLine(costEffectiveComputer.Disk);
+			Console.WriteLine(costEffectiveComputer.GraphicsCard);
+			Console.WriteLine(costEffectiveComputer.MainBoard);
+			Console.WriteLine(costEffectiveComputer.Memory);
 
 			Console.WriteLine();
 
-			new Director(new HighPerformanceBuilder()).BuildComputer();
+			var highPerformanceComputer = new Director(new HighPerformanceBuilder()).BuildComputer();
+			Console.WriteLine(highPerformanceComputer.CPU);
+			Console.WriteLine(highPerformanceComputer.Disk);
+			Console.WriteLine(highPerformanceComputer.GraphicsCard);
+			Console.WriteLine(highPerformanceComputer.MainBoard);
+			Console.WriteLine(highPerformanceComputer.Memory);
 		}
 	}
 }

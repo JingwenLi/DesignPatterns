@@ -7,15 +7,20 @@ namespace DesignPatterns.Singleton
         private InnerClassSignleton()
         {
         }
-        
-        private static class InnerClassHolder
+
+        private class InnerClassHolder
         {
             public static InnerClassSignleton instance = new InnerClassSignleton();
         }
 
-        public static InnerClassSignleton GetInstance()
+        public static void HI()
         {
-            return InnerClassHolder.instance;
+            Console.WriteLine("HI~");
         }
-    }
+
+        public static InnerClassSignleton GetInstance()
+		{
+			return InnerClassHolder.instance;
+		}
+	}
 }

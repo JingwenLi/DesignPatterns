@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Singleton
+﻿using System;
+
+namespace DesignPatterns.Singleton
 {
 	public class HungrySingleton
     {
@@ -8,9 +10,14 @@
         {
         }
 
-        public static HungrySingleton GetInstance()
+        public static void HI()
         {
-            return instance;
+            Console.WriteLine("HI~");
         }
-    }
+
+        public static HungrySingleton GetInstance()
+		{
+			return instance;
+		}
+	}
 }

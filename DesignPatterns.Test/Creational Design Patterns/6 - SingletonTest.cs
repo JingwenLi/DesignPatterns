@@ -9,8 +9,11 @@ namespace DesignPatterns.Test
 		[TestMethod]
 		public void TestGetInstance()
 		{
-			InnerClassSignleton.HI();
-			HungrySingleton.HI();
+			LazySingleton.GetInstance();
+			LazySingleton.GetInstance();
+
+			InnerClassSignleton.GetInstance();
+			HungrySingleton.GetInstance();
 		}
 	}
 }

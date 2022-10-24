@@ -46,6 +46,7 @@
     <Compile Include="Creational Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
+    <Content Include="Notes\6 - Singleton.txt" />
     <Content Include="Notes\Design Patterns.txt" />
     <Content Include="Notes\1 - Simple Factory.txt" />
     <EmbeddedResource Include="UML\5 - Prototype.png" />

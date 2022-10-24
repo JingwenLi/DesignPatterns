@@ -2,13 +2,13 @@
 {
 	public class HungrySingleton
     {
-        private static HungrySingleton instance = new HungrySingleton();
+        private static readonly HungrySingleton instance = new HungrySingleton();
 
         private HungrySingleton()
         {
         }
 
-        public static HungrySingleton getInstance()
+        public static HungrySingleton GetInstance()
         {
             return instance;
         }

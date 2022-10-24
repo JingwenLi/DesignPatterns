@@ -8,7 +8,7 @@
         {
         }
 
-        public static LazySingleton getInstance()
+        public static LazySingleton GetInstance()
         {
             if (instance == null)
             {

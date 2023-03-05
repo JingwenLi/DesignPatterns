@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.ClassAdapterDemo
+namespace DesignPatterns.ClassAdapter
 {
 	class Client
 	{

@@ -35,13 +35,12 @@ namespace DesignPatterns.Bridge
 	{
 		public override void Draw()
 		{
-			color.Paint("正方形");
+			color.Paint("圆形");
 		}
 	}
 
 	public class Rectangle : Shape
 	{
-
 		public override void Draw()
 		{
 			color.Paint("长方形");

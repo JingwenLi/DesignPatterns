@@ -41,36 +41,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Creational Design Patterns\0 - Before\MobilePhone.cs" />
     <Compile Include="Creational Design Patterns\1 - Simple Factory\SimpleMobilePhoneFactory.cs" />
     <Compile Include="Creational Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
     <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
-    <Content Include="Notes\6 - Singleton.txt" />
-    <Content Include="Notes\Design Patterns.txt" />
-    <Content Include="Notes\1 - Simple Factory.txt" />
-    <EmbeddedResource Include="UML\5 - Prototype.png" />
-    <EmbeddedResource Include="UML\4 - Builder.png" />
-    <Content Include="Notes\2 - Factory Method.txt" />
-    <EmbeddedResource Include="UML\2 - Factory Method.png" />
-    <Content Include="Notes\3 - Abstract Factory.txt" />
     <Compile Include="Creational Design Patterns\4 - Builder\Builder.cs" />
-    <EmbeddedResource Include="UML\3 - Abstract Factory.png" />
-    <Content Include="Notes\4 - Builder.txt" />
     <Compile Include="Creational Design Patterns\4 - Builder\Computer.cs" />
     <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
     <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
-    <Content Include="Notes\5 - Prototype.txt" />
     <Compile Include="Creational Design Patterns\6 - Singleton\InnerClassSignleton.cs" />
     <Compile Include="Creational Design Patterns\6 - Singleton\LazySingleton.cs" />
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Creational Design Patterns\Notes\Design Patterns.txt" />
+    <Content Include="Creational Design Patterns\Notes\1 - Simple Factory.txt" />
+    <Content Include="Creational Design Patterns\Notes\2 - Factory Method.txt" />
+    <Content Include="Creational Design Patterns\Notes\3 - Abstract Factory.txt" />
+    <Content Include="Creational Design Patterns\Notes\4 - Builder.txt" />
+    <Content Include="Creational Design Patterns\Notes\5 - Prototype.txt" />
+    <Content Include="Creational Design Patterns\Notes\6 - Singleton.txt" />
+    <EmbeddedResource Include="Creational Design Patterns\UML\1 - Simple Factory.png" />
+    <EmbeddedResource Include="Creational Design Patterns\UML\2 - Factory Method.png" />
+    <EmbeddedResource Include="Creational Design Patterns\UML\3 - Abstract Factory.png" />
+    <EmbeddedResource Include="Creational Design Patterns\UML\4 - Builder.png" />
+    <EmbeddedResource Include="Creational Design Patterns\UML\5 - Prototype.png" />
     <Content Include="note.txt" />
-    <EmbeddedResource Include="UML\1 - Simple Factory.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Design Patterns\" />
-    <Folder Include="Structural Design Patterns\" />
+    <Folder Include="Structural Design Patterns\1\" />
+    <Folder Include="Structural Design Patterns\2\" />
+    <Folder Include="Structural Design Patterns\3\" />
+    <Folder Include="Structural Design Patterns\Notes\" />
+    <Folder Include="Structural Design Patterns\UML\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

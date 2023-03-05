@@ -15,7 +15,7 @@ namespace DesignPatterns.ObjectAdapter
 	{
 		public virtual void Request()
 		{
-			Console.WriteLine("两孔的插头");
+			Console.WriteLine("使用两孔的插头");
 		}
 	}
 
@@ -23,7 +23,7 @@ namespace DesignPatterns.ObjectAdapter
 	{
 		public void SpecificRequest()
 		{
-			Console.WriteLine("三孔的插头");
+			Console.WriteLine("使用三孔的插头");
 		}
 	}
 

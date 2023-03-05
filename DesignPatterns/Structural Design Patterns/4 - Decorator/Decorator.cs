@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 
 namespace DesignPatterns.Composite
 {
@@ -7,93 +8,60 @@ namespace DesignPatterns.Composite
 	{
 		static void Main(string[] args)
 		{
-			Decorator root = new Composite("root");
-			root.Add(new Leaf("Leaf A"));
-			root.Add(new Leaf("Leaf B"));
-
-			Decorator comp = new Composite("Composite X");
-			comp.Add(new Leaf("Leaf XA"));
-			comp.Add(new Leaf("Leaf XB"));
-
-			root.Add(comp);
-			root.Add(new Leaf("Leaf C"));
-
-			// Add and remove a leaf
-			Leaf leaf = new Leaf("Leaf D");
-			root.Add(leaf);
-			root.Remove(leaf);
-
-			// Recursively display tree
-			root.Display(1);
+			ConcretProuct livingProduct = new ConcretProuct("平底锅", 100);
+			Console.WriteLine(PrintProductDetails(livingProduct));
+			Decorator dec1 = new Decorator(livingProduct, "海鲜酱油", 10);
+			Console.WriteLine(PrintProductDetails(dec1));
+			Decorator dec2 = new Decorator(dec1, "老坛酸菜", 12);
+			Console.WriteLine(PrintProductDetails(dec2));
+			Console.ReadKey();
+		}
+		private static string PrintProductDetails(ProductBase product)
+		{
+			return string.Format("产品组合：{0}   价格：{1}", product.GetName(), product.GetPrice());
 		}
 	}
 
-	public abstract class Component
+	public abstract class ProductBase
 	{
-		protected string _name;
+		public abstract string GetName();
+		public abstract double GetPrice();
+	}
 
-		public Component(string name)
+	public class ConcretProuct : ProductBase
+	{
+		private string Name;
+		private double Price;
+
+		public ConcretProuct(string name, double price)
 		{
+			Name = name;
+			Price = price;
+		}
+		public override string GetName() => return Name;
+		public override double GetPrice() => return Price;
+	}
+
+	public class Decorator : ProductBase
+	{
+		private ProductBase _product = null;
+		private string _name;
+		private double _price;
+
+		public Decorator(ProductBase product, string name, double price)
+		{
+			this._product = product;
 			this._name = name;
+			this._price = price;
 		}
-
-		public abstract void Add(Component c);
-
-		public abstract void Remove(Component c);
-
-		public abstract void Display(int depth);
-	}
-
-	public class Leaf : Component
-	{
-		public Leaf(string name)
-			: base(name)
+		public override string GetName()
 		{
+			return string.Format("{0},{1}", _product.GetName(), _name);
 		}
-
-		public override void Add(Component c)
+		public override double GetPrice()
 		{
-			Console.WriteLine("Cannot add to a leaf");
-		}
-
-		public override void Remove(Component c)
-		{
-			Console.WriteLine("Cannot remove from a leaf");
-		}
-
-		public override void Display(int depth)
-		{
-			Console.WriteLine(new String('-', depth) + _name);
+			return _product.GetPrice() + _price;
 		}
 	}
 
-	public class Decorator : Component
-	{
-		private List<Component> _children = new List<Component>();
-
-		public Decorator(string name)
-			: base(name)
-		{
-		}
-
-		public override void Add(Component component)
-		{
-			_children.Add(component);
-		}
-
-		public override void Remove(Component component)
-		{
-			_children.Remove(component);
-		}
-
-		public override void Display(int depth)
-		{
-			Console.WriteLine(new String('-', depth) + _name);
-
-			foreach (Component component in _children)
-			{
-				component.Display(depth + 2);
-			}
-		}
-	}
 }

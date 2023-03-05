@@ -2,6 +2,7 @@
 
 namespace DesignPatterns.ObjectAdapter
 {
+	//https://www.cnblogs.com/zhili/p/AdapterPattern.html
 	class Client
 	{
 		static void Main(string[] args)

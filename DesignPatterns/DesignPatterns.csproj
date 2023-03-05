@@ -56,6 +56,7 @@
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
     <Compile Include="Structural Design Patterns\1 - Adapter\ObjectAdapter.cs" />
     <Compile Include="Structural Design Patterns\1 - Adapter\ClassAdapter.cs" />
+    <Compile Include="Structural Design Patterns\2 - Bridge\Bridge.cs" />
     <Content Include="Creational Design Patterns\Notes\Design Patterns.txt" />
     <Content Include="Creational Design Patterns\Notes\1 - Simple Factory.txt" />
     <Content Include="Creational Design Patterns\Notes\2 - Factory Method.txt" />
@@ -63,6 +64,7 @@
     <Content Include="Creational Design Patterns\Notes\4 - Builder.txt" />
     <Content Include="Creational Design Patterns\Notes\5 - Prototype.txt" />
     <Content Include="Creational Design Patterns\Notes\6 - Singleton.txt" />
+    <Content Include="Structural Design Patterns\Notes\2 - Bridge.txt" />
     <Content Include="Structural Design Patterns\Notes\1 - Adapter.txt" />
     <EmbeddedResource Include="Creational Design Patterns\UML\1 - Simple Factory.png" />
     <EmbeddedResource Include="Creational Design Patterns\UML\2 - Factory Method.png" />
@@ -73,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Design Patterns\" />
-    <Folder Include="Structural Design Patterns\2 - Bridge\" />
     <Folder Include="Structural Design Patterns\3 - Composite\" />
     <Folder Include="Structural Design Patterns\4 - Decorator\" />
     <Folder Include="Structural Design Patterns\UML\" />

@@ -38,8 +38,8 @@ namespace DesignPatterns.Composite
 			Name = name;
 			Price = price;
 		}
-		public override string GetName() => return Name;
-		public override double GetPrice() => return Price;
+		public override string GetName() => Name;
+		public override double GetPrice() => Price;
 	}
 
 	public class Decorator : ProductBase

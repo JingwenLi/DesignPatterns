@@ -1,0 +1,7 @@
+﻿装饰模式动态地给一个对象添加额外的职责
+
+主要角色
+1.Component: 抽象构件
+2.ConcreteComponent: 具体构件
+3.Decorator: 抽象装饰类
+4.ConcreteDecorator: 具体装饰类

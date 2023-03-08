@@ -17,13 +17,7 @@ namespace DesignPatterns
 			Bridge.Client.Run();
 			CompareAdapterWithBridge.Client.Run();
 		}
-
-		//[TestMethod]
-		//public void TestComposite()
-		//{
-		//	Composite.Client.Run();
-		//}
-
+		
 		[TestMethod]
 		public void TestDecorator()
 		{
@@ -40,12 +34,6 @@ namespace DesignPatterns
 		public void TestProxy()
 		{
 			Proxy.Client.Run();
-		}
-
-		[TestMethod]
-		public void TestFlyweight()
-		{
-			Flyweight.Client.Run();
 		}
 	}
 }

@@ -2,13 +2,16 @@
 
 namespace DesignPatterns.Proxy
 {
-	static void Main(string[] args)
+	class Client
 	{
-		var girl = new Girl("如花");
-		var boy = new Boy("阿强");
-		var proxy = new Proxy(boy, girl);
-		proxy.GiveFlower();
-		Console.ReadLine();
+		static void Main(string[] args)
+		{
+			var girl = new Girl("如花");
+			var boy = new Boy("阿强");
+			var proxy = new Proxy(boy, girl);
+			proxy.GiveFlower();
+			Console.ReadLine();
+		}
 	}
 
 	interface IGivegifts

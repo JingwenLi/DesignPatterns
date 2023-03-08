@@ -7,11 +7,11 @@ namespace DesignPatterns.Adapter
 		public static void Run()
 		{
             var adaptee = new Adaptee();
-            Console.WriteLine("Adaptee is incompatible. Client can not use it.");
+            Console.WriteLine("Adaptee is incompatible. The client can not use it.");
 
-            ITarget target1 = new ObjectAdapter(adaptee);
-            ITarget target2 = new ClassAdapter();
-            Console.WriteLine("But with adapter, client can use it.");
+			//ITarget target1 = new ObjectAdapter(adaptee);
+			//ITarget target2 = new ClassAdapter();
+			//Console.WriteLine("But with adapter, the client can use it.");
 
 			Use(target1);
 			Use(target2);
@@ -29,7 +29,7 @@ namespace DesignPatterns.Adapter
 		string GetRequest();
 	}
 
-	// The Adaptee contains some useful behavior. The client can’t use this class directly because it's incompatible with the Client Interface.
+	// The Adaptee contains some useful behavior. The client can’t use this class directly because it's incompatible with the client code.
 	public class Adaptee
 	{
 		public string GetSpecificRequest()

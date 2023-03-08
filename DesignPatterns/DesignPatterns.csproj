@@ -54,6 +54,7 @@
     <Compile Include="Creational Design Patterns\6 - Singleton\InnerClassSignleton.cs" />
     <Compile Include="Creational Design Patterns\6 - Singleton\LazySingleton.cs" />
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
+    <Compile Include="Structural Design Patterns\1 - Adapter\WithoutAdapter.cs" />
     <Compile Include="Structural Design Patterns\1 - Adapter\Adapter.cs" />
     <Compile Include="Structural Design Patterns\2 - Bridge\CompareAdapterWithBridge.cs" />
     <Compile Include="Structural Design Patterns\2 - Bridge\Bridge.cs" />

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.Adapter
+namespace DesignPatterns.WithoutAdapter
 {
 	public class Client
 	{
@@ -8,13 +8,6 @@ namespace DesignPatterns.Adapter
 		{
 			var adaptee = new Adaptee();
 			Console.WriteLine("Adaptee is incompatible. The client can not use it.");
-
-			ITarget target1 = new ObjectAdapter(adaptee);
-			ITarget target2 = new ClassAdapter();
-			Console.WriteLine("But with adapter, the client can use it.");
-
-			Use(target1);
-			Use(target2);
 		}
 
 		public static void Use(ITarget target)
@@ -35,31 +28,6 @@ namespace DesignPatterns.Adapter
 		public string GetSpecificRequest()
 		{
 			return "Specific request.";
-		}
-	}
-
-	// Hold the object: Adaptee
-	public class ObjectAdapter : ITarget
-	{
-		private readonly Adaptee _adaptee;
-
-		public ObjectAdapter(Adaptee adaptee)
-		{
-			_adaptee = adaptee;
-		}
-
-		public string GetRequest()
-		{
-			return $"This is '{_adaptee.GetSpecificRequest()}'";
-		}
-	}
-
-	// Implement class: Adaptee
-	public class ClassAdapter : Adaptee, ITarget
-	{
-		public string GetRequest()
-		{
-			return $"This is '{GetSpecificRequest()}'";
 		}
 	}
 }

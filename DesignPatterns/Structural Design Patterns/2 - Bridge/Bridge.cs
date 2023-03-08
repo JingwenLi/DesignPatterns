@@ -2,9 +2,9 @@
 
 namespace DesignPatterns.Bridge
 {
-	class Class1
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			//白色
 			Color white = new White();

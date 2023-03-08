@@ -2,9 +2,9 @@
 
 namespace DesignPatterns.Proxy
 {
-	class Client
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			var girl = new Girl("如花");
 			var boy = new Boy("阿强");

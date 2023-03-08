@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Flyweight
 {
-	class Client
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			var factory = new FlyweightFactory();
 

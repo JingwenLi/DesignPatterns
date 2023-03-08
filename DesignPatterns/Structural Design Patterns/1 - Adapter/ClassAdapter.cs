@@ -2,9 +2,9 @@
 
 namespace DesignPatterns.ClassAdapter
 {
-	class Client
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			ITwoHoleTarget change = new ThreeToTwoAdapter();
 			change.Request();

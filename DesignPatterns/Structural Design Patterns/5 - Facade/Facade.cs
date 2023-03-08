@@ -2,9 +2,9 @@
 
 namespace DesignPatterns.Facade
 {
-	class Client
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			var facade = new SystemFacade();
 			facade.SubmitOrder();

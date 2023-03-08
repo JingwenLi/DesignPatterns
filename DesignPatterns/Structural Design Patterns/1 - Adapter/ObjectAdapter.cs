@@ -3,9 +3,9 @@
 namespace DesignPatterns.ObjectAdapter
 {
 	//https://www.cnblogs.com/zhili/p/AdapterPattern.html
-	class Client
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			TwoHoleTarget homeTwoHole = new ThreeToTwoAdapter();
 			homeTwoHole.Request();

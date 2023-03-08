@@ -2,9 +2,9 @@
 
 namespace DesignPatterns.Composite
 {
-	class Class1
+	public class Client
 	{
-		static void Main(string[] args)
+		public static void Run()
 		{
 			ConcretProuct livingProduct = new ConcretProuct("平底锅", 100);
 			Console.WriteLine(PrintProductDetails(livingProduct));

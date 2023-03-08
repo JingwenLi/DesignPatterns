@@ -55,7 +55,6 @@
     <Compile Include="Creational Design Patterns\6 - Singleton\LazySingleton.cs" />
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
     <Compile Include="Structural Design Patterns\1 - Adapter\ObjectAdapter.cs" />
-    <Compile Include="Structural Design Patterns\1 - Adapter\ClassAdapter.cs" />
     <Compile Include="Structural Design Patterns\2 - Bridge\Bridge.cs" />
     <Compile Include="Structural Design Patterns\3 - Composite\Composite.cs" />
     <Compile Include="Structural Design Patterns\4 - Decorator\Decorator.cs" />

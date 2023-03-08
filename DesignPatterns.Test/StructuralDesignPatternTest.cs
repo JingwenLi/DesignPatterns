@@ -7,8 +7,7 @@ namespace DesignPatterns.Test.Structural_Design_Patterns
 		[TestMethod]
 		public void TestAdapter()
 		{
-			ObjectAdapter.Client.Run();
-			ClassAdapter.Client.Run();
+			Adapter.Client.Run();
 		}
 
 		[TestMethod]

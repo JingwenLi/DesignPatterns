@@ -1,5 +1,8 @@
 ﻿using System;
 
+// The Facade class provides a simple interface to the complex logic of one or several subsystems.
+// The Facade delegates the requests to subsystem.
+// All of this shields the client from the undesired complexity of the subsystem.
 namespace DesignPatterns.Facade
 {
 	public class Client

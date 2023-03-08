@@ -11,13 +11,13 @@ namespace DesignPatterns.CompareAdapterWithBridge
 			var pink = new Pink();
 
 			var square = new Square();
-			var rectange = new Rectangle();
+			var rectangle = new Rectangle();
 			var circle = new Circle();
 
 			var obj1 = new ColorfulShapeAdapter(white, square);
 			obj1.Draw();
 
-			var obj2 = new ColorfulShapeAdapter(blue, rectange);
+			var obj2 = new ColorfulShapeAdapter(blue, rectangle);
 			obj2.Draw();
 
 			var obj4 = new ColorfulShapeAdapter(pink, circle);

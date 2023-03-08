@@ -11,14 +11,14 @@ namespace DesignPatterns.Bridge
 			var pink = new Pink();
 
 			var square = new Square();
-			var rectange = new Rectangle();
+			var rectangle = new Rectangle();
 			var circle = new Circle();
 
 			square.SetColor(white);
 			square.Draw();
 
-			rectange.SetColor(blue);
-			rectange.Draw();
+			rectangle.SetColor(blue);
+			rectangle.Draw();
 
 			circle.SetColor(pink);
 			circle.Draw();

@@ -6,56 +6,69 @@ namespace DesignPatterns.Proxy
 	{
 		public static void Run()
 		{
-			var girl = new Girl("如花");
-			var boy = new Boy("阿强");
-			var proxy = new Proxy(boy, girl);
-			proxy.GiveFlower();
-			Console.ReadLine();
+			Console.WriteLine("Client: Executing with a real subject:");
+			var realSubject = new RealSubject();
+			Execute(realSubject);
+
+			Console.WriteLine();
+
+			Console.WriteLine("Client: Executing with a proxy:");
+			Proxy proxy = new Proxy(realSubject);
+			Execute(proxy);
+		}
+
+		public static void Execute(ISubject subject)
+		{
+			subject.Request();
 		}
 	}
 
-	interface IGivegifts
+	// The Subject interface declares common operations for both RealSubject and the Proxy.
+	// As long as the client works with RealSubject using this interface, you'll be able to pass in a proxy instead of a real subject.
+	public interface ISubject
 	{
-		void GiveFlower();
+		void Request();
 	}
 
-	public class Girl
+	// The RealSubject contains some core business logic.
+	// Usually, RealSubjects are capable of doing some useful work which may also be very slow or sensitive.
+	class RealSubject : ISubject
 	{
-		public string name;
-		public Girl(string name)
+		public void Request()
 		{
-			this.name = name;
-		}
-	}
-
-	public class Boy : IGivegifts
-	{
-		public string name;
-		public Boy(string name)
-		{
-			this.name = name;
-		}
-		public void GiveFlower()
-		{
-			Console.WriteLine($"{name} give you flower");
+			Console.WriteLine("RealSubject: Request...");
 		}
 	}
 
-	public class Proxy : IGivegifts
+	class Proxy : ISubject
 	{
-		private Boy boy;
-		private Girl girl;
+		private RealSubject realSubject;
 
-		public Proxy(Boy boy, Girl girl)
+		public Proxy(RealSubject realSubject)
 		{
-			boy = boy;
-			girl = girl;
+			this.realSubject = realSubject;
 		}
 
-		public void GiveFlower()
+		public void Request()
 		{
-			Console.WriteLine($"Dear {girl.name}");
-			boy.GiveFlower();
+			if (CheckAccess())
+			{
+				realSubject.Request();
+
+				LogAccess();
+			}
+		}
+
+		public bool CheckAccess()
+		{
+			Console.WriteLine("Proxy: Checking access.");
+
+			return true;
+		}
+
+		public void LogAccess()
+		{
+			Console.WriteLine("Proxy: Logging request time.");
 		}
 	}
 }

@@ -1,5 +1,5 @@
 ﻿为其他对象提供一种代理以控制对这个对象的访问。
 
-1.抽象主题角色（Subject）
-2.代理主题角色（Proxy）
-3.真实主题角色（RealSubject）
+1.抽象主题角色 (Subject)
+2.代理主题角色 (Proxy)
+3.真实主题角色 (RealSubject)

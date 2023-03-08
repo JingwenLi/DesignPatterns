@@ -75,7 +75,7 @@
     <Content Include="Structural Design Patterns\Notes\3 - Decorator.txt" />
     <Content Include="Structural Design Patterns\Notes\2 - Bridge.txt" />
     <Content Include="Structural Design Patterns\Notes\1 - Adapter.txt" />
-    <Content Include="Structural Design Patterns\Notes\Creational Design Patterns.txt" />
+    <Content Include="Structural Design Patterns\Structural Design Patterns.txt" />
     <EmbeddedResource Include="Creational Design Patterns\UML\1 - Simple Factory.png" />
     <EmbeddedResource Include="Creational Design Patterns\UML\2 - Factory Method.png" />
     <EmbeddedResource Include="Creational Design Patterns\UML\3 - Abstract Factory.png" />
@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Design Patterns\" />
-    <Folder Include="Structural Design Patterns\UML\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Structural Design Patterns\Structural Design Patterns.pptx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,12 +2,13 @@
 
 namespace DesignPatterns
 {
+	[TestClass]
 	public class StructuralDesignPatternTest
 	{
 		[TestMethod]
 		public void TestAdapter()
 		{
-			Adapter.Client.Run();
+			new Adapter.Client().Run();
 		}
 
 		[TestMethod]

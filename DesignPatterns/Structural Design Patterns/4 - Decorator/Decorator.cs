@@ -1,64 +1,84 @@
 ﻿using System;
 
-namespace DesignPatterns.Composite
+namespace DesignPatterns.Decorator
 {
 	public class Client
 	{
 		public static void Run()
 		{
-			ConcretProuct livingProduct = new ConcretProuct("平底锅", 100);
-			Console.WriteLine(PrintProductDetails(livingProduct));
-			Decorator dec1 = new Decorator(livingProduct, "海鲜酱油", 10);
-			Console.WriteLine(PrintProductDetails(dec1));
-			Decorator dec2 = new Decorator(dec1, "老坛酸菜", 12);
-			Console.WriteLine(PrintProductDetails(dec2));
-			Console.ReadKey();
-		}
-		private static string PrintProductDetails(ProductBase product)
-		{
-			return string.Format("产品组合：{0}   价格：{1}", product.GetName(), product.GetPrice());
+			var simple = new ConcreteComponent();
+			Console.WriteLine("I get a simple component:");
+			Console.WriteLine("RESULT: " + simple.Operation()); 
+			Console.WriteLine();
+
+			var decorator1 = new ConcreteDecoratorA(simple);
+			Console.WriteLine("I get a decorated component:");
+			Console.WriteLine("RESULT: " + decorator1.Operation());
+			Console.WriteLine();
+
+			// Note how decorators can wrap not only simple components but the other decorators as well.
+			var decorator2 = new ConcreteDecoratorB(decorator1);
+			Console.WriteLine("I get a decorated component:");
+			Console.WriteLine("RESULT: " + decorator2.Operation());
+			Console.WriteLine();
 		}
 	}
 
-	public abstract class ProductBase
+	// The base Component interface defines operations that can be altered by decorators.
+	public abstract class Component
 	{
-		public abstract string GetName();
-		public abstract double GetPrice();
+		public abstract string Operation();
 	}
 
-	public class ConcretProuct : ProductBase
+	// Concrete Components provide default implementations of the operations.
+	class ConcreteComponent : Component
 	{
-		private string Name;
-		private double Price;
-
-		public ConcretProuct(string name, double price)
+		public override string Operation()
 		{
-			Name = name;
-			Price = price;
+			return "ConcreteComponent";
 		}
-		public override string GetName() => Name;
-		public override double GetPrice() => Price;
 	}
 
-	public class Decorator : ProductBase
+	abstract class Decorator : Component
 	{
-		private ProductBase _product = null;
-		private string _name;
-		private double _price;
+		protected Component component;
 
-		public Decorator(ProductBase product, string name, double price)
+		public Decorator(Component component)
 		{
-			this._product = product;
-			this._name = name;
-			this._price = price;
+			this.component = component;
 		}
-		public override string GetName()
+
+		// The Decorator delegates all work to the wrapped component.
+		public override string Operation()
 		{
-			return string.Format("{0},{1}", _product.GetName(), _name);
+			if (this.component != null)
+			{
+				return this.component.Operation();
+			}
+			else
+			{
+				return string.Empty;
+			}
 		}
-		public override double GetPrice()
+	}
+
+	class ConcreteDecoratorA : Decorator
+	{
+		public ConcreteDecoratorA(Component comp) : base(comp) { }
+		
+		public override string Operation()
 		{
-			return _product.GetPrice() + _price;
+			return $"ConcreteDecoratorA({base.Operation()})";
+		}
+	}
+
+	class ConcreteDecoratorB : Decorator
+	{
+		public ConcreteDecoratorB(Component comp) : base(comp) { }
+
+		public override string Operation()
+		{
+			return $"ConcreteDecoratorB({base.Operation()})";
 		}
 	}
 

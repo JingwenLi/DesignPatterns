@@ -18,17 +18,17 @@ namespace DesignPatterns
 			CompareAdapterWithBridge.Client.Run();
 		}
 
-		[TestMethod]
-		public void TestComposite()
-		{
-			Composite.Client.Run();
-		}
-
 		//[TestMethod]
-		//public void TestDecorator()
+		//public void TestComposite()
 		//{
-		//	Decorator.Client.Run();
+		//	Composite.Client.Run();
 		//}
+
+		[TestMethod]
+		public void TestDecorator()
+		{
+			Decorator.Client.Run();
+		}
 
 		[TestMethod]
 		public void TestFacade()

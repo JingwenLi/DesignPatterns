@@ -15,27 +15,27 @@ namespace DesignPatterns.Facade
 
 	public class SubSystem1
 	{
-		public string Operation1()
+		public void Operation1()
 		{
-			return "SubSystem1: Ready!\n";
+			Console.WriteLine("SubSystem1: Ready!");
 		}
 
-		public string OperationN()
+		public void OperationN()
 		{
-			return "SubSystem1: Go!\n";
+			Console.WriteLine( "SubSystem1: Go!");
 		}
 	}
 
 	public class SubSystem2
 	{
-		public string Operation1()
+		public void Operation1()
 		{
-			return "SubSystem2: Get ready!\n";
+			Console.WriteLine("SubSystem2: Get ready!");
 		}
 
-		public string OperationZ()
+		public void OperationZ()
 		{
-			return "SubSystem2: Fire!\n";
+			Console.WriteLine("SubSystem2: Fire!");
 		}
 	}
 

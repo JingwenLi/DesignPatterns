@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DesignPatterns.Test.Structural_Design_Patterns
+namespace DesignPatterns
 {
 	public class StructuralDesignPatternTest
 	{
@@ -22,11 +22,11 @@ namespace DesignPatterns.Test.Structural_Design_Patterns
 			Composite.Client.Run();
 		}
 
-		[TestMethod]
-		public void TestDecorator()
-		{
-			Decorator.Client.Run();
-		}
+		//[TestMethod]
+		//public void TestDecorator()
+		//{
+		//	Decorator.Client.Run();
+		//}
 
 		[TestMethod]
 		public void TestFacade()

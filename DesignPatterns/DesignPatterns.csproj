@@ -72,6 +72,7 @@
     <Content Include="Structural Design Patterns\Notes\3 - Composite.txt" />
     <Content Include="Structural Design Patterns\Notes\2 - Bridge.txt" />
     <Content Include="Structural Design Patterns\Notes\1 - Adapter.txt" />
+    <Content Include="Structural Design Patterns\Notes\Creational Design Patterns.txt" />
     <EmbeddedResource Include="Creational Design Patterns\UML\1 - Simple Factory.png" />
     <EmbeddedResource Include="Creational Design Patterns\UML\2 - Factory Method.png" />
     <EmbeddedResource Include="Creational Design Patterns\UML\3 - Abstract Factory.png" />

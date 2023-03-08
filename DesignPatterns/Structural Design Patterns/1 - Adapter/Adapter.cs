@@ -6,8 +6,8 @@ namespace DesignPatterns.Adapter
 	{
 		public static void Run()
 		{
-            var adaptee = new Adaptee();
-            Console.WriteLine("Adaptee is incompatible. The client can not use it.");
+			var adaptee = new Adaptee();
+			Console.WriteLine("Adaptee is incompatible. The client can not use it.");
 
 			//ITarget target1 = new ObjectAdapter(adaptee);
 			//ITarget target2 = new ClassAdapter();

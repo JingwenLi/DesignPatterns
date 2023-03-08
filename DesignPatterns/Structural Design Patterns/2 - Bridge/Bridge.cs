@@ -6,81 +6,114 @@ namespace DesignPatterns.Bridge
 	{
 		public static void Run()
 		{
-			//白色
-			Color white = new White();
-			//正方形
-			Shape square = new Square();
-			//白色的正方形
-			square.SetColor(white);
-			square.Draw();
+			var white = new White();
+			var blue = new Blue();
+			var pink = new Pink();
 
-			//长方形
-			Shape rectange = new Rectangle();
-			rectange.SetColor(white);
-			rectange.Draw();
+			var square = new Square();
+			var rectange = new Rectangle();
+			var circle = new Circle();
+
+			var obj1 = new ColorfulShape(white, square);
+			obj1.Draw();
+
+			var obj2 = new ColorfulShape(blue, rectange);
+			obj2.Draw();
+
+			var obj3 = new ColorfulShape(pink, square);
+			obj3.Draw();
+
+			var obj4 = new ColorfulShape(pink, circle);
+			obj4.Draw();
 		}
 	}
 
-	public abstract class Shape
+	public class ColorfulShape
 	{
-		public Color color;
-		public void SetColor(Color color)
+		public Color Color;
+		public Shape Shape;
+
+		public ColorfulShape(Color color, Shape shape)
 		{
-			this.color = color;
+			Color = color;
+			Shape = shape;
 		}
-		public abstract void Draw();
+
+		public void Draw()
+		{
+			Shape.Draw();
+
+			Console.Write(" ");
+
+			Color.Paint();
+
+			Console.WriteLine();
+		}
+	}
+
+	#region Shape
+
+	public interface Shape
+	{
+		void Draw();
 	}
 
 	public class Circle : Shape
 	{
-		public override void Draw()
+		public void Draw()
 		{
-			color.Paint("圆形");
+			Console.Write("Circle");
 		}
 	}
 
 	public class Rectangle : Shape
 	{
-		public override void Draw()
+		public void Draw()
 		{
-			color.Paint("长方形");
+			Console.Write("Rectangle");
 		}
 	}
 
 	public class Square : Shape
 	{
-		public override void Draw()
+		public void Draw()
 		{
-			color.Paint("正方形");
+			Console.Write("Square");
 		}
 	}
 
+	#endregion
+
+	#region Color
+
 	public interface Color
 	{
-		void Paint(string shape);
+		void Paint();
 	}
 
 	public class White : Color
 	{
-		public void Paint(string shape)
+		public void Paint()
 		{
-			Console.WriteLine("白色的" + shape);
+			Console.Write("White");
 		}
 	}
 
-	public class Gray : Color
+	public class Pink : Color
 	{
-		public void Paint(string shape)
+		public void Paint()
 		{
-			Console.WriteLine("灰色的" + shape);
+			Console.Write("Pink");
 		}
 	}
 
-	public class Black : Color
+	public class Blue : Color
 	{
-		public void Paint(string shape)
+		public void Paint()
 		{
-			Console.WriteLine("黑色的" + shape);
+			Console.Write("Blue");
 		}
 	}
+
+	#endregion
 }

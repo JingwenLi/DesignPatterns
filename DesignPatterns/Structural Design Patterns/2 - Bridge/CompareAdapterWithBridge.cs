@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.CompareWithBridge
+namespace DesignPatterns.CompareAdapterWithBridge
 {
 	public class Client
 	{
@@ -14,23 +14,23 @@ namespace DesignPatterns.CompareWithBridge
 			var rectange = new Rectangle();
 			var circle = new Circle();
 
-			var obj1 = new ColorfulShape(white, square);
+			var obj1 = new ColorfulShapeAdapter(white, square);
 			obj1.Draw();
 
-			var obj2 = new ColorfulShape(blue, rectange);
+			var obj2 = new ColorfulShapeAdapter(blue, rectange);
 			obj2.Draw();
 
-			var obj4 = new ColorfulShape(pink, circle);
+			var obj4 = new ColorfulShapeAdapter(pink, circle);
 			obj4.Draw();
 		}
 	}
 
-	public class ColorfulShape : Shape
+	public class ColorfulShapeAdapter : Shape
 	{
 		public Color color;
 		public Shape shape;
 
-		public ColorfulShape(Color color, Shape shape)
+		public ColorfulShapeAdapter(Color color, Shape shape)
 		{
 			this.color = color;
 			this.shape = shape;

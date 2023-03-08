@@ -15,7 +15,7 @@ namespace DesignPatterns
 		public void TestBridge()
 		{
 			Bridge.Client.Run();
-			CompareWithBridge.Client.Run();
+			CompareAdapterWithBridge.Client.Run();
 		}
 
 		[TestMethod]

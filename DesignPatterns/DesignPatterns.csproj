@@ -60,6 +60,7 @@
     <Compile Include="Structural Design Patterns\3 - Composite\Composite.cs" />
     <Compile Include="Structural Design Patterns\4 - Decorator\Decorator.cs" />
     <Compile Include="Structural Design Patterns\5 - Facade\Facade.cs" />
+    <Compile Include="Structural Design Patterns\7 - Flyweight\Flyweight.cs" />
     <Compile Include="Structural Design Patterns\6 - Proxy\Proxy.cs" />
     <Content Include="Creational Design Patterns\Notes\Design Patterns.txt" />
     <Content Include="Creational Design Patterns\Notes\1 - Simple Factory.txt" />
@@ -68,6 +69,7 @@
     <Content Include="Creational Design Patterns\Notes\4 - Builder.txt" />
     <Content Include="Creational Design Patterns\Notes\5 - Prototype.txt" />
     <Content Include="Creational Design Patterns\Notes\6 - Singleton.txt" />
+    <Content Include="Structural Design Patterns\Notes\7 - Flyweight.txt" />
     <Content Include="Structural Design Patterns\Notes\6 - Proxy.txt" />
     <Content Include="Structural Design Patterns\Notes\5 - Facade.txt" />
     <Content Include="Structural Design Patterns\Notes\4 - Decorator.txt" />

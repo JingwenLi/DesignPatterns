@@ -14,106 +14,78 @@ namespace DesignPatterns.Bridge
 			var rectange = new Rectangle();
 			var circle = new Circle();
 
-			var obj1 = new ColorfulShape(white, square);
-			obj1.Draw();
+			square.SetColor(white);
+			square.Draw();
 
-			var obj2 = new ColorfulShape(blue, rectange);
-			obj2.Draw();
+			rectange.SetColor(blue);
+			rectange.Draw();
 
-			var obj3 = new ColorfulShape(pink, square);
-			obj3.Draw();
-
-			var obj4 = new ColorfulShape(pink, circle);
-			obj4.Draw();
+			circle.SetColor(pink);
+			circle.Draw();
 		}
 	}
 
-	public class ColorfulShape
+	public abstract class Shape
 	{
-		public Color Color;
-		public Shape Shape;
-
-		public ColorfulShape(Color color, Shape shape)
+		public Color color;
+		public void SetColor(Color color)
 		{
-			Color = color;
-			Shape = shape;
+			this.color = color;
 		}
-
-		public void Draw()
-		{
-			Shape.Draw();
-
-			Console.Write(" ");
-
-			Color.Paint();
-
-			Console.WriteLine();
-		}
-	}
-
-	#region Shape
-
-	public interface Shape
-	{
-		void Draw();
+		public abstract void Draw();
 	}
 
 	public class Circle : Shape
 	{
-		public void Draw()
+		public override void Draw()
 		{
-			Console.Write("Circle");
+			color.Paint("Circle");
 		}
 	}
 
 	public class Rectangle : Shape
 	{
-		public void Draw()
+
+		public override void Draw()
 		{
-			Console.Write("Rectangle");
+			color.Paint("Rectangle");
 		}
 	}
 
 	public class Square : Shape
 	{
-		public void Draw()
+		public override void Draw()
 		{
-			Console.Write("Square");
+			color.Paint("Square");
 		}
 	}
 
-	#endregion
-
-	#region Color
-
 	public interface Color
 	{
-		void Paint();
+		void Paint(string shape);
 	}
 
 	public class White : Color
 	{
-		public void Paint()
+		public void Paint(string shape)
 		{
-			Console.Write("White");
-		}
-	}
-
-	public class Pink : Color
-	{
-		public void Paint()
-		{
-			Console.Write("Pink");
+			Console.WriteLine("White " + shape);
 		}
 	}
 
 	public class Blue : Color
 	{
-		public void Paint()
+		public void Paint(string shape)
 		{
-			Console.Write("Blue");
+			Console.WriteLine("Blue " + shape);
 		}
 	}
 
-	#endregion
+	public class Pink : Color
+	{
+		public void Paint(string shape)
+		{
+			Console.WriteLine("Pink " + shape);
+		}
+	}
 }

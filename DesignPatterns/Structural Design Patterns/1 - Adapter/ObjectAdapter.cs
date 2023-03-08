@@ -4,7 +4,7 @@ namespace DesignPatterns.Adapter
 {
 	public class Client
 	{
-		public void Run()
+		public static void Run()
 		{
             var adaptee = new Adaptee();
             Console.WriteLine("Adaptee is incompatible. Client can not use it.");
@@ -17,7 +17,7 @@ namespace DesignPatterns.Adapter
 			Use(target2);
 		}
 
-		public void Use(ITarget target)
+		public static void Use(ITarget target)
 		{
 			Console.WriteLine(target.GetRequest());
 		}

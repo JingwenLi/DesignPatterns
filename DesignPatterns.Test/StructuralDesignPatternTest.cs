@@ -8,7 +8,7 @@ namespace DesignPatterns
 		[TestMethod]
 		public void TestAdapter()
 		{
-			new Adapter.Client().Run();
+			Adapter.Client.Run();
 		}
 
 		[TestMethod]

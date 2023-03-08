@@ -51,14 +51,7 @@ namespace DesignPatterns.Decorator
 		// The Decorator delegates all work to the wrapped component.
 		public override string Operation()
 		{
-			if (this.component != null)
-			{
-				return this.component.Operation();
-			}
-			else
-			{
-				return string.Empty;
-			}
+			return component.Operation();
 		}
 	}
 
@@ -81,5 +74,4 @@ namespace DesignPatterns.Decorator
 			return $"ConcreteDecoratorB({base.Operation()})";
 		}
 	}
-
 }

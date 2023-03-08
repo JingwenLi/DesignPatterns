@@ -6,42 +6,58 @@ namespace DesignPatterns.Facade
 	{
 		public static void Run()
 		{
-			var facade = new SystemFacade();
-			facade.SubmitOrder();
+			var subSystem1 = new SubSystem1();
+			var subSystem2 = new SubSystem2(); 
+			var facade = new Facade(subSystem1, subSystem2);
+			facade.Operation();
 		}
 	}
 
-	public class WarehouseSystem
+	public class SubSystem1
 	{
-		public void Pack()
+		public string Operation1()
 		{
-			Console.WriteLine("Pack good");
+			return "SubSystem1: Ready!\n";
+		}
+
+		public string OperationN()
+		{
+			return "SubSystem1: Go!\n";
 		}
 	}
 
-	public class LogisticsSystem
+	public class SubSystem2
 	{
-		public void Delivery()
+		public string Operation1()
 		{
-			Console.WriteLine("Delivery goods");
+			return "SubSystem2: Get ready!\n";
+		}
+
+		public string OperationZ()
+		{
+			return "SubSystem2: Fire!\n";
 		}
 	}
 
-	public class SystemFacade
+	public class Facade
 	{
-		private WarehouseSystem warehouseSystem;
-		private LogisticsSystem logisticsSystem;
+		protected SubSystem1 subSystem1;
 
-		public SystemFacade()
+		protected SubSystem2 subSystem2;
+
+		public Facade(SubSystem1 subSystem1, SubSystem2 subSystem2)
 		{
-			warehouseSystem = new WarehouseSystem();
-			logisticsSystem = new LogisticsSystem();
+			this.subSystem1 = subSystem1;
+			this.subSystem2 = subSystem2;
 		}
 
-		public void SubmitOrder()
+		public void Operation()
 		{
-			warehouseSystem.Pack();
-			logisticsSystem.Delivery();
+			subSystem1.Operation1();
+			subSystem2.Operation1();
+
+			subSystem1.OperationN();
+			subSystem2.OperationZ();
 		}
 	}
 }

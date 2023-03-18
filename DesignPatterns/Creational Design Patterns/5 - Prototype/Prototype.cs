@@ -4,6 +4,39 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace DesignPatterns.Prototype
 {
+	public class Client
+	{
+		public static void Run()
+		{
+			RunShallowClone();
+			RunDeepClone();
+		}
+
+		static void RunShallowClone()
+		{
+			var obj = new ShallowClone(new int[] { 1, 2, 3, 4, 5 });
+			var obj1 = obj.Clone();
+			var obj2 = obj.Clone();
+
+			obj.myValue[0] = 6;
+
+			Console.WriteLine(obj1.myValue[0]);
+			Console.WriteLine(obj2.myValue[0]);
+		}
+
+        static void RunDeepClone()
+		{
+			var obj = new DeepClone(new int[] { 1, 2, 3, 4, 5 });
+			var obj1 = obj.Clone();
+			var obj2 = obj.Clone();
+
+			obj.myValue[0] = 6;
+
+			Console.WriteLine(obj1.myValue[0]);
+			Console.WriteLine(obj2.myValue[0]);
+		}
+    }
+
     [Serializable]
     public abstract class PrototypeClass
     {

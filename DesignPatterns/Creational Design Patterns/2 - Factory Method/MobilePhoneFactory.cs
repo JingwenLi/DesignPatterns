@@ -1,6 +1,17 @@
-﻿namespace DesignPatterns.FactoryMethod
+﻿using DesignPatterns.Before;
+
+namespace DesignPatterns.FactoryMethod
 {
-	public interface IMobilePhoneFactory
+	public class Client
+	{
+		public static void Run()
+		{
+			new XiaoMiFactory().CreateMobilePhone().Call();
+			new HuaWeiFactory().CreateMobilePhone().Call();
+		}
+    }
+
+    public interface IMobilePhoneFactory
     {
         MobilePhone CreateMobilePhone();
     }

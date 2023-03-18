@@ -1,7 +1,17 @@
 ﻿using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.Before
 {
+
+	public class Client
+	{
+		public static void Run()
+		{
+			new XiaoMiPhone().Call();
+			new HuaWeiPhone().Call();
+		}
+    }
+
     public abstract class MobilePhone
     {
         public abstract string GetName();

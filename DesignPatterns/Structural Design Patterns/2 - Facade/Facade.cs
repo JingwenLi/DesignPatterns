@@ -33,11 +33,18 @@ namespace DesignPatterns.Facade
 
 	public class Facade
 	{
+		protected SubSystem1 subSystem1;
+
+		protected SubSystem2 subSystem2;
+
+		public Facade()
+		{
+			this.subSystem1 = new SubSystem1();
+			this.subSystem2 = new SubSystem2();
+		}
+
 		public void Operation()
 		{
-			var subSystem1 = new SubSystem1();
-			var subSystem2 = new SubSystem2();
-
 			subSystem1.Operation1();
 			subSystem2.Operation1();
 

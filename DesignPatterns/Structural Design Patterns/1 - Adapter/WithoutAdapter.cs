@@ -30,4 +30,12 @@ namespace DesignPatterns.WithoutAdapter
 			return "Specific request.";
 		}
 	}
+
+	public class Adapter : ITarget
+	{
+		public string GetRequest()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

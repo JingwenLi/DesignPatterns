@@ -56,11 +56,11 @@
     <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
     <Compile Include="Structural Design Patterns\1 - Adapter\WithoutAdapter.cs" />
     <Compile Include="Structural Design Patterns\1 - Adapter\Adapter.cs" />
-    <Compile Include="Structural Design Patterns\2 - Bridge\CompareAdapterWithBridge.cs" />
-    <Compile Include="Structural Design Patterns\2 - Bridge\Bridge.cs" />
-    <Compile Include="Structural Design Patterns\3 - Decorator\Decorator.cs" />
-    <Compile Include="Structural Design Patterns\4 - Facade\Facade.cs" />
-    <Compile Include="Structural Design Patterns\5 - Proxy\Proxy.cs" />
+    <Compile Include="Structural Design Patterns\4 - Bridge\CompareAdapterWithBridge.cs" />
+    <Compile Include="Structural Design Patterns\4 - Bridge\Bridge.cs" />
+    <Compile Include="Structural Design Patterns\5 - Decorator\Decorator.cs" />
+    <Compile Include="Structural Design Patterns\2 - Facade\Facade.cs" />
+    <Compile Include="Structural Design Patterns\3 - Proxy\Proxy.cs" />
     <Compile Include="Structural Design Patterns\6 - Composite\Composite.cs" />
     <Compile Include="Structural Design Patterns\7 - Flyweight\Flyweight.cs" />
     <Content Include="Creational Design Patterns\Notes\Design Patterns.txt" />

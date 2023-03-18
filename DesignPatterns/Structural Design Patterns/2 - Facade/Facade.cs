@@ -39,8 +39,8 @@ namespace DesignPatterns.Facade
 
 		public Facade()
 		{
-			this.subSystem1 = new SubSystem1();
-			this.subSystem2 = new SubSystem2();
+			subSystem1 = new SubSystem1();
+			subSystem2 = new SubSystem2();
 		}
 
 		public void Operation()

@@ -70,10 +70,10 @@
     <Content Include="Creational Design Patterns\Notes\4 - Builder.txt" />
     <Content Include="Creational Design Patterns\Notes\5 - Prototype.txt" />
     <Content Include="Creational Design Patterns\Notes\6 - Singleton.txt" />
-    <Content Include="Structural Design Patterns\Notes\5 - Proxy.txt" />
-    <Content Include="Structural Design Patterns\Notes\4 - Facade.txt" />
-    <Content Include="Structural Design Patterns\Notes\3 - Decorator.txt" />
-    <Content Include="Structural Design Patterns\Notes\2 - Bridge.txt" />
+    <Content Include="Structural Design Patterns\Notes\3 - Proxy.txt" />
+    <Content Include="Structural Design Patterns\Notes\2 - Facade.txt" />
+    <Content Include="Structural Design Patterns\Notes\5 - Decorator.txt" />
+    <Content Include="Structural Design Patterns\Notes\4 - Bridge.txt" />
     <Content Include="Structural Design Patterns\Notes\1 - Adapter.txt" />
     <Content Include="Structural Design Patterns\Structural Design Patterns.txt" />
     <EmbeddedResource Include="Creational Design Patterns\UML\1 - Simple Factory.png" />

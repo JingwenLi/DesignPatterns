@@ -38,6 +38,15 @@ namespace DesignPatterns.Adapter
 		}
 	}
 
+	// Implement class: Adaptee
+	public class ClassAdapter : Adaptee, ITarget
+	{
+		public string GetRequest()
+		{
+			return $"This is '{GetSpecificRequest()}'";
+		}
+	}
+
 	// Hold the object: Adaptee
 	public class ObjectAdapter : ITarget
 	{
@@ -51,15 +60,6 @@ namespace DesignPatterns.Adapter
 		public string GetRequest()
 		{
 			return $"This is '{_adaptee.GetSpecificRequest()}'";
-		}
-	}
-
-	// Implement class: Adaptee
-	public class ClassAdapter : Adaptee, ITarget
-	{
-		public string GetRequest()
-		{
-			return $"This is '{GetSpecificRequest()}'";
 		}
 	}
 }

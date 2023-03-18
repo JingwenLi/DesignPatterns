@@ -5,17 +5,6 @@
 // All of this shields the client from the undesired complexity of the subsystem.
 namespace DesignPatterns.Facade
 {
-	public class Client
-	{
-		public static void Run()
-		{
-			var subSystem1 = new SubSystem1();
-			var subSystem2 = new SubSystem2(); 
-			var facade = new Facade(subSystem1, subSystem2);
-			facade.Operation();
-		}
-	}
-
 	public class SubSystem1
 	{
 		public void Operation1()
@@ -44,23 +33,25 @@ namespace DesignPatterns.Facade
 
 	public class Facade
 	{
-		protected SubSystem1 subSystem1;
-
-		protected SubSystem2 subSystem2;
-
-		public Facade(SubSystem1 subSystem1, SubSystem2 subSystem2)
-		{
-			this.subSystem1 = subSystem1;
-			this.subSystem2 = subSystem2;
-		}
-
 		public void Operation()
 		{
+			var subSystem1 = new SubSystem1();
+			var subSystem2 = new SubSystem2();
+
 			subSystem1.Operation1();
 			subSystem2.Operation1();
 
 			subSystem1.OperationN();
 			subSystem2.OperationZ();
+		}
+	}
+
+	public class Client
+	{
+		public static void Run()
+		{
+			var facade = new Facade();
+			facade.Operation();
 		}
 	}
 }

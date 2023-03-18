@@ -2,20 +2,6 @@
 
 namespace DesignPatterns.WithoutAdapter
 {
-	public class Client
-	{
-		public static void Run()
-		{
-			var adaptee = new Adaptee();
-			Console.WriteLine("Adaptee is incompatible. The client can not use it.");
-		}
-
-		public static void Use(ITarget target)
-		{
-			Console.WriteLine(target.GetRequest());
-		}
-	}
-
 	// The Client Interface. It describes a protocol that other classes must follow to be able to collaborate with the client code.
 	public interface ITarget
 	{
@@ -28,6 +14,20 @@ namespace DesignPatterns.WithoutAdapter
 		public string GetSpecificRequest()
 		{
 			return "Specific request.";
+		}
+	}
+
+	public class Client
+	{
+		public static void Run()
+		{
+			var adaptee = new Adaptee();
+			Console.WriteLine("Adaptee is incompatible. The client can not use it.");
+		}
+
+		public static void Use(ITarget target)
+		{
+			Console.WriteLine(target.GetRequest());
 		}
 	}
 }

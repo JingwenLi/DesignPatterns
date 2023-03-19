@@ -6,22 +6,22 @@ namespace DesignPatterns.Bridge
 	{
 		public static void Run()
 		{
-			var white = new White();
+			var red = new Red();
 			var blue = new Blue();
-			var pink = new Pink();
+			var white = new White();
 
 			var square = new Square();
-			var rectangle = new Rectangle();
 			var circle = new Circle();
+			var rectangle = new Rectangle();
 
-			square.SetColor(white);
+			square.SetColor(red);
 			square.Draw();
+
+			circle.SetColor(white);
+			circle.Draw();
 
 			rectangle.SetColor(blue);
 			rectangle.Draw();
-
-			circle.SetColor(pink);
-			circle.Draw();
 		}
 	}
 
@@ -65,11 +65,11 @@ namespace DesignPatterns.Bridge
 		void Paint(string shape);
 	}
 
-	public class White : Color
+	public class Red : Color
 	{
 		public void Paint(string shape)
 		{
-			Console.WriteLine("White " + shape);
+			Console.WriteLine("Red " + shape);
 		}
 	}
 
@@ -81,11 +81,11 @@ namespace DesignPatterns.Bridge
 		}
 	}
 
-	public class Pink : Color
+	public class White : Color
 	{
 		public void Paint(string shape)
 		{
-			Console.WriteLine("Pink " + shape);
+			Console.WriteLine("White " + shape);
 		}
 	}
 }

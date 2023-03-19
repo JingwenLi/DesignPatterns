@@ -87,6 +87,7 @@
     <Folder Include="Behavioral Design Patterns\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Structural Design Patterns\Structural Design Patterns - WTG.pptx" />
     <None Include="Structural Design Patterns\Structural Design Patterns.pptx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

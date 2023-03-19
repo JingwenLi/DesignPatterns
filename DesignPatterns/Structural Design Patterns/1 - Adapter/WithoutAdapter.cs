@@ -8,7 +8,8 @@ namespace DesignPatterns.WithoutAdapter
 		string GetRequest();
 	}
 
-	// The Adaptee contains some useful behavior. The client can’t use this class directly because it's incompatible with the client code.
+	// The Adaptee contains some useful behavior.
+	// The client can’t use this class directly because it's incompatible with the client code.
 	public class Adaptee
 	{
 		public string GetSpecificRequest()

@@ -2,26 +2,32 @@
 
 namespace DesignPatterns.Bridge
 {
-	public class Client
+	public interface Color
 	{
-		public static void Run()
+		void Paint(string shape);
+	}
+
+	public class Red : Color
+	{
+		public void Paint(string shape)
 		{
-			var red = new Red();
-			var blue = new Blue();
-			var white = new White();
+			Console.WriteLine("Red " + shape);
+		}
+	}
 
-			var square = new Square();
-			var circle = new Circle();
-			var rectangle = new Rectangle();
+	public class Blue : Color
+	{
+		public void Paint(string shape)
+		{
+			Console.WriteLine("Blue " + shape);
+		}
+	}
 
-			square.SetColor(red);
-			square.Draw();
-
-			circle.SetColor(white);
-			circle.Draw();
-
-			rectangle.SetColor(blue);
-			rectangle.Draw();
+	public class White : Color
+	{
+		public void Paint(string shape)
+		{
+			Console.WriteLine("White " + shape);
 		}
 	}
 
@@ -60,32 +66,26 @@ namespace DesignPatterns.Bridge
 		}
 	}
 
-	public interface Color
+	public class Client
 	{
-		void Paint(string shape);
-	}
-
-	public class Red : Color
-	{
-		public void Paint(string shape)
+		public static void Run()
 		{
-			Console.WriteLine("Red " + shape);
-		}
-	}
+			var red = new Red();
+			var blue = new Blue();
+			var white = new White();
 
-	public class Blue : Color
-	{
-		public void Paint(string shape)
-		{
-			Console.WriteLine("Blue " + shape);
-		}
-	}
+			var square = new Square();
+			var circle = new Circle();
+			var rectangle = new Rectangle();
 
-	public class White : Color
-	{
-		public void Paint(string shape)
-		{
-			Console.WriteLine("White " + shape);
+			square.SetColor(red);
+			square.Draw();
+
+			circle.SetColor(white);
+			circle.Draw();
+
+			rectangle.SetColor(blue);
+			rectangle.Draw();
 		}
 	}
 }

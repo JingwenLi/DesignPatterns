@@ -34,7 +34,7 @@ namespace DesignPatterns.Proxy
 			{
 				realSubject.Request();
 
-				LogAccess();
+				LogRequest();
 			}
 		}
 
@@ -45,7 +45,7 @@ namespace DesignPatterns.Proxy
 			return true;
 		}
 
-		public void LogAccess()
+		public void LogRequest()
 		{
 			Console.WriteLine("Proxy: Logging request time.");
 		}

@@ -35,6 +35,7 @@ namespace DesignPatterns.Proxy
 				realSubject.Request();
 
 				LogRequest();
+				CacheResult();
 			}
 		}
 
@@ -48,6 +49,11 @@ namespace DesignPatterns.Proxy
 		public void LogRequest()
 		{
 			Console.WriteLine("Proxy: Logging request time.");
+		}
+
+		public void CacheResult()
+		{
+			Console.WriteLine("Proxy: Cache result.");
 		}
 	}
 

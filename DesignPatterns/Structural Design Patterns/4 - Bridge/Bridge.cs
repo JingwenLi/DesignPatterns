@@ -48,16 +48,7 @@ namespace DesignPatterns.Bridge
 			color.Paint("Circle");
 		}
 	}
-
-	public class Rectangle : Shape
-	{
-
-		public override void Draw()
-		{
-			color.Paint("Rectangle");
-		}
-	}
-
+	
 	public class Square : Shape
 	{
 		public override void Draw()
@@ -76,7 +67,6 @@ namespace DesignPatterns.Bridge
 
 			var square = new Square();
 			var circle = new Circle();
-			var rectangle = new Rectangle();
 
 			square.SetColor(red);
 			square.Draw();
@@ -84,8 +74,8 @@ namespace DesignPatterns.Bridge
 			circle.SetColor(white);
 			circle.Draw();
 
-			rectangle.SetColor(blue);
-			rectangle.Draw();
+			circle.SetColor(blue);
+			circle.Draw();
 		}
 	}
 }

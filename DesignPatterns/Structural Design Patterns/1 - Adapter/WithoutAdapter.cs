@@ -31,4 +31,14 @@ namespace DesignPatterns.WithoutAdapter
 			Console.WriteLine(target.GetRequest());
 		}
 	}
+
+
+
+	public class Adapter : ITarget
+	{
+		public string GetRequest()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

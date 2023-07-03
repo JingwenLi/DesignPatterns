@@ -7,8 +7,8 @@ namespace DesignPatterns
 	{
 		static void Main(string[] args)
 		{
-			HungrySingleton.GetHI();
-			InnerClassSignleton.GetHI();
+			//HungrySingleton.GetHI();
+			//InnerClassSignleton.GetHI();
 		}
 	}
 }

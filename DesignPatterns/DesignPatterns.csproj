@@ -41,71 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behavioral Design Patterns\Chain of Responsibility\Client.cs" />
-    <Compile Include="Behavioral Design Patterns\Chain of Responsibility\Handler.cs" />
-    <Compile Include="Behavioral Design Patterns\Command\Invoker.cs" />
-    <Compile Include="Behavioral Design Patterns\Command\Receiver.cs" />
-    <Compile Include="Behavioral Design Patterns\Command\Client.cs" />
-    <Compile Include="Behavioral Design Patterns\Command\Handler.cs" />
-    <Compile Include="Behavioral Design Patterns\Iterator\IteratorAggregate.cs" />
-    <Compile Include="Behavioral Design Patterns\Iterator\Iterator.cs" />
-    <Compile Include="Behavioral Design Patterns\Iterator\Client.cs" />
-    <Compile Include="Behavioral Design Patterns\Mediator\Mediator.cs" />
-    <Compile Include="Behavioral Design Patterns\Mediator\Component.cs" />
-    <Compile Include="Behavioral Design Patterns\Mediator\Client.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Creational Design Patterns\0 - Before\MobilePhone.cs" />
-    <Compile Include="Creational Design Patterns\1 - Simple Factory\SimpleMobilePhoneFactory.cs" />
-    <Compile Include="Creational Design Patterns\2 - Factory Method\MobilePhoneFactory.cs" />
-    <Compile Include="Creational Design Patterns\3 - Abstract Factory\Factory.cs" />
-    <Compile Include="Creational Design Patterns\3 - Abstract Factory\Watch.cs" />
-    <Compile Include="Creational Design Patterns\4 - Builder\Builder.cs" />
-    <Compile Include="Creational Design Patterns\4 - Builder\Computer.cs" />
-    <Compile Include="Creational Design Patterns\4 - Builder\Director.cs" />
-    <Compile Include="Creational Design Patterns\5 - Prototype\Prototype.cs" />
-    <Compile Include="Creational Design Patterns\6 - Singleton\InnerClassSignleton.cs" />
-    <Compile Include="Creational Design Patterns\6 - Singleton\LazySingleton.cs" />
-    <Compile Include="Creational Design Patterns\6 - Singleton\HungrySingleton.cs" />
-    <Compile Include="Structural Design Patterns\1 - Adapter\WithoutAdapter.cs" />
-    <Compile Include="Structural Design Patterns\1 - Adapter\Adapter.cs" />
-    <Compile Include="Structural Design Patterns\4 - Bridge\CompareAdapterWithBridge.cs" />
-    <Compile Include="Structural Design Patterns\4 - Bridge\Bridge.cs" />
-    <Compile Include="Structural Design Patterns\5 - Decorator\Decorator.cs" />
-    <Compile Include="Structural Design Patterns\2 - Facade\Facade.cs" />
-    <Compile Include="Structural Design Patterns\3 - Proxy\Proxy.cs" />
-    <Compile Include="Structural Design Patterns\6 - Composite\Composite.cs" />
-    <Compile Include="Structural Design Patterns\7 - Flyweight\Flyweight.cs" />
-    <Content Include="Creational Design Patterns\Notes\Design Patterns.txt" />
-    <Content Include="Creational Design Patterns\Notes\1 - Simple Factory.txt" />
-    <Content Include="Creational Design Patterns\Notes\2 - Factory Method.txt" />
-    <Content Include="Creational Design Patterns\Notes\3 - Abstract Factory.txt" />
-    <Content Include="Creational Design Patterns\Notes\4 - Builder.txt" />
-    <Content Include="Creational Design Patterns\Notes\5 - Prototype.txt" />
-    <Content Include="Creational Design Patterns\Notes\6 - Singleton.txt" />
-    <Content Include="Structural Design Patterns\Notes\3 - Proxy.txt" />
-    <Content Include="Structural Design Patterns\Notes\2 - Facade.txt" />
-    <Content Include="Structural Design Patterns\Notes\5 - Decorator.txt" />
-    <Content Include="Structural Design Patterns\Notes\4 - Bridge.txt" />
-    <Content Include="Structural Design Patterns\Notes\1 - Adapter.txt" />
-    <Content Include="Structural Design Patterns\Structural Design Patterns.txt" />
-    <EmbeddedResource Include="Creational Design Patterns\UML\1 - Simple Factory.png" />
-    <EmbeddedResource Include="Creational Design Patterns\UML\2 - Factory Method.png" />
-    <EmbeddedResource Include="Creational Design Patterns\UML\3 - Abstract Factory.png" />
-    <EmbeddedResource Include="Creational Design Patterns\UML\4 - Builder.png" />
-    <EmbeddedResource Include="Creational Design Patterns\UML\5 - Prototype.png" />
-    <Content Include="note.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Memento\" />
-    <Folder Include="Behavioral Design Patterns\Observer\" />
-    <Folder Include="Behavioral Design Patterns\State\" />
-    <Folder Include="Behavioral Design Patterns\Strategy\" />
-    <Folder Include="Behavioral Design Patterns\Template Method\" />
-    <Folder Include="Behavioral Design Patterns\Visitor\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Structural Design Patterns\Structural Design Patterns - WTG.pptx" />
-    <None Include="Structural Design Patterns\Structural Design Patterns.pptx" />
+	<Compile Include="**\*.cs" />
+    <EmbeddedResource Include="**\*.png" />
+    <EmbeddedResource Include="**\*.txt" />
+    <EmbeddedResource Include="**\*.pptx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

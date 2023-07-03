@@ -7,18 +7,29 @@ namespace DesignPatterns.Memento
 	{
 		public static void Run()
 		{
-			// The client code.
-			Component1 component1 = new Component1();
-			Component2 component2 = new Component2();
-			new ConcreteMediator(component1, component2);
+			// Client code.
+			Originator originator = new Originator("Super-duper-super-puper-super.");
+			Caretaker caretaker = new Caretaker(originator);
 
-			Console.WriteLine("Client triggers operation A.");
-			component1.DoA();
+			caretaker.Backup();
+			originator.DoSomething();
+
+			caretaker.Backup();
+			originator.DoSomething();
+
+			caretaker.Backup();
+			originator.DoSomething();
 
 			Console.WriteLine();
+			caretaker.ShowHistory();
 
-			Console.WriteLine("Client triggers operation D.");
-			component2.DoD();
+			Console.WriteLine("\nClient: Now, let's rollback!\n");
+			caretaker.Undo();
+
+			Console.WriteLine("\n\nClient: Once more!\n");
+			caretaker.Undo();
+
+			Console.WriteLine();
 		}
 	}
 }

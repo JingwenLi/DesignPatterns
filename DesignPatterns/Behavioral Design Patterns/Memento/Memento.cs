@@ -3,33 +3,48 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Memento
 {
-	internal class Client
+	// The Memento interface provides a way to retrieve the memento's metadata,
+	// such as creation date or name. However, it doesn't expose the
+	// Originator's state.
+	public interface IMemento
 	{
-		public static void Run()
+		string GetName();
+
+		string GetState();
+
+		DateTime GetDate();
+	}
+
+	// The Concrete Memento contains the infrastructure for storing the
+	// Originator's state.
+	class ConcreteMemento : IMemento
+	{
+		private string _state;
+
+		private DateTime _date;
+
+		public ConcreteMemento(string state)
 		{
-			// Client code.
-			Originator originator = new Originator("Super-duper-super-puper-super.");
-			Caretaker caretaker = new Caretaker(originator);
+			this._state = state;
+			this._date = DateTime.Now;
+		}
 
-			caretaker.Backup();
-			originator.DoSomething();
+		// The Originator uses this method when restoring its state.
+		public string GetState()
+		{
+			return this._state;
+		}
 
-			caretaker.Backup();
-			originator.DoSomething();
+		// The rest of the methods are used by the Caretaker to display
+		// metadata.
+		public string GetName()
+		{
+			return $"{this._date} / ({this._state.Substring(0, 9)})...";
+		}
 
-			caretaker.Backup();
-			originator.DoSomething();
-
-			Console.WriteLine();
-			caretaker.ShowHistory();
-
-			Console.WriteLine("\nClient: Now, let's rollback!\n");
-			caretaker.Undo();
-
-			Console.WriteLine("\n\nClient: Once more!\n");
-			caretaker.Undo();
-
-			Console.WriteLine();
+		public DateTime GetDate()
+		{
+			return this._date;
 		}
 	}
 }

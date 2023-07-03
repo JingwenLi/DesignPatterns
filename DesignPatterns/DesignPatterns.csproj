@@ -46,9 +46,5 @@
     <EmbeddedResource Include="**\*.txt" />
     <EmbeddedResource Include="**\*.pptx" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Template Method\" />
-    <Folder Include="Behavioral Design Patterns\Visitor\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

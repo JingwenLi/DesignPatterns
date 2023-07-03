@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behavioral Design Patterns\0 - Chain of Responsibility\Client.cs" />
-    <Compile Include="Behavioral Design Patterns\0 - Chain of Responsibility\Handler.cs" />
+    <Compile Include="Behavioral Design Patterns\Chain of Responsibility\Client.cs" />
+    <Compile Include="Behavioral Design Patterns\Chain of Responsibility\Handler.cs" />
+    <Compile Include="Behavioral Design Patterns\Command\Invoker.cs" />
+    <Compile Include="Behavioral Design Patterns\Command\Receiver.cs" />
+    <Compile Include="Behavioral Design Patterns\Command\Client.cs" />
+    <Compile Include="Behavioral Design Patterns\Command\Handler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Creational Design Patterns\0 - Before\MobilePhone.cs" />
     <Compile Include="Creational Design Patterns\1 - Simple Factory\SimpleMobilePhoneFactory.cs" />

@@ -95,7 +95,14 @@
     <EmbeddedResource Include="Creational Design Patterns\UML\5 - Prototype.png" />
     <Content Include="note.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Behavioral Design Patterns\Memento\" />
+    <Folder Include="Behavioral Design Patterns\Observer\" />
+    <Folder Include="Behavioral Design Patterns\State\" />
+    <Folder Include="Behavioral Design Patterns\Strategy\" />
+    <Folder Include="Behavioral Design Patterns\Template Method\" />
+    <Folder Include="Behavioral Design Patterns\Visitor\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Structural Design Patterns\Structural Design Patterns - WTG.pptx" />
     <None Include="Structural Design Patterns\Structural Design Patterns.pptx" />

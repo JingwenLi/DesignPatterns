@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Strategy
 {
-	internal class Strategy
+	internal class Client
 	{
 		public static void Run()
 		{

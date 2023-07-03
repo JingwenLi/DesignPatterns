@@ -41,13 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-	<Compile Include="**\*.cs" />
+    <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.png" />
     <EmbeddedResource Include="**\*.txt" />
     <EmbeddedResource Include="**\*.pptx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\Observer\" />
     <Folder Include="Behavioral Design Patterns\State\" />
     <Folder Include="Behavioral Design Patterns\Strategy\" />
     <Folder Include="Behavioral Design Patterns\Template Method\" />

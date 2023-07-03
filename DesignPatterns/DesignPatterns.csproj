@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral Design Patterns\0 - Chain of Responsibility\Client.cs" />
+    <Compile Include="Behavioral Design Patterns\0 - Chain of Responsibility\Handler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Creational Design Patterns\0 - Before\MobilePhone.cs" />
     <Compile Include="Creational Design Patterns\1 - Simple Factory\SimpleMobilePhoneFactory.cs" />
@@ -83,9 +85,7 @@
     <EmbeddedResource Include="Creational Design Patterns\UML\5 - Prototype.png" />
     <Content Include="note.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Behavioral Design Patterns\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Structural Design Patterns\Structural Design Patterns - WTG.pptx" />
     <None Include="Structural Design Patterns\Structural Design Patterns.pptx" />

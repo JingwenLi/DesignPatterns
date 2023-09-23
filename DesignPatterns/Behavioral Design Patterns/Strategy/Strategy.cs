@@ -1,33 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace DesignPatterns.Strategy
 {
 	public interface IStrategy
 	{
-		object DoAlgorithm(object data);
+		void Execute();
 	}
 
-	class ConcreteStrategyA : IStrategy
+	public class ConcreteStrategyA : IStrategy
 	{
-		public object DoAlgorithm(object data)
+		public void Execute()
 		{
-			var list = data as List<string>;
-			list.Sort();
-
-			return list;
+			Console.WriteLine("Executing strategy A");
 		}
 	}
 
-	class ConcreteStrategyB : IStrategy
+	public class ConcreteStrategyB : IStrategy
 	{
-		public object DoAlgorithm(object data)
+		public void Execute()
 		{
-			var list = data as List<string>;
-			list.Sort();
-			list.Reverse();
-
-			return list;
+			Console.WriteLine("Executing strategy B");
 		}
 	}
 }

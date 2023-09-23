@@ -11,10 +11,6 @@
 			subject.Attach(observerA);
 			subject.Attach(observerB);
 			subject.SomeBusinessLogic();
-			subject.SomeBusinessLogic();
-
-			subject.Detach(observerB);
-			subject.SomeBusinessLogic();
 		}
 	}
 }

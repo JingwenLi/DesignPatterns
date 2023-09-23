@@ -10,16 +10,18 @@ namespace DesignPatterns.PublishSubscriber
 		public void Attach(ISubscriber subscriber)
 		{
 			subscribers.Add(subscriber);
+			Console.WriteLine("Publisher: Attached an subscriber.");
 		}
 
 		public void Detach(ISubscriber subscriber)
 		{
 			subscribers.Remove(subscriber);
+			Console.WriteLine("Publisher: Attached an subscriber.");
 		}
 
 		public void PublishMessage(Message message)
 		{
-			Console.WriteLine("Subject: Publishing...");
+			Console.WriteLine($"\nPublisher: Publishing {message.Content}");
 			foreach (var subscriber in subscribers)
 			{
 				subscriber.ReceiveMessage(message);

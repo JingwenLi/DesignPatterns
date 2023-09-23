@@ -11,7 +11,7 @@ namespace DesignPatterns.PublishSubscriber
 	{
 		public void ReceiveMessage(Message message)
 		{
-			Console.WriteLine("ConcreteSubscriberA: Received message");
+			Console.WriteLine($"ConcreteSubscriberA: Received {message.Content}");
 		}
 	}
 
@@ -19,7 +19,7 @@ namespace DesignPatterns.PublishSubscriber
 	{
 		public void ReceiveMessage(Message message)
 		{
-			Console.WriteLine("ConcreteSubscriberB: Received message");
+			Console.WriteLine($"ConcreteSubscriberB: Received {message.Content}");
 		}
 	}
 }

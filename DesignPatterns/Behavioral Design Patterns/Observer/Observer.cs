@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace DesignPatterns.Observer
 {
@@ -9,16 +8,11 @@ namespace DesignPatterns.Observer
 		void Update(ISubject subject);
 	}
 
-	// Concrete Observers react to the updates issued by the Subject they had
-	// been attached to.
 	class ConcreteObserverA : IObserver
 	{
 		public void Update(ISubject subject)
 		{
-			if ((subject as Subject).State < 3)
-			{
-				Console.WriteLine("ConcreteObserverA: Reacted to the event.");
-			}
+			Console.WriteLine("ConcreteObserverA: Reacted to the event.");
 		}
 	}
 
@@ -26,10 +20,7 @@ namespace DesignPatterns.Observer
 	{
 		public void Update(ISubject subject)
 		{
-			if ((subject as Subject).State == 0 || (subject as Subject).State >= 2)
-			{
-				Console.WriteLine("ConcreteObserverB: Reacted to the event.");
-			}
+			Console.WriteLine("ConcreteObserverA: Reacted to the event.");
 		}
 	}
 }

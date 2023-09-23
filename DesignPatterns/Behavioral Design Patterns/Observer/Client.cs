@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Observer
 {
-	internal class Client
+	public class Client
 	{
 		public static void Run()
 		{

@@ -44,7 +44,9 @@
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.png" />
     <EmbeddedResource Include="**\*.txt" />
-    <EmbeddedResource Include="**\*.pptx" />
+    <EmbeddedResource Include="Behavioral Design Patterns\Behavioral Design Patterns - WTG.pptx" />
+    <EmbeddedResource Include="Structural Design Patterns\Structural Design Patterns - WTG.pptx" />
+    <EmbeddedResource Include="Structural Design Patterns\Structural Design Patterns.pptx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,11 @@ namespace DesignPatterns.Test
 		{
 			PublishSubscriber.Client.Run();
 		}
+
+		[TestMethod]
+		public void TestStrategy()
+		{
+			Strategy.Client.Run();
+		}
 	}
 }

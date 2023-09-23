@@ -11,8 +11,6 @@ namespace DesignPatterns.Strategy
 			context.SetStrategy(new ConcreteStrategyA());
 			context.ExecuteStrategy();
 
-			Console.WriteLine();
-
 			context.SetStrategy(new ConcreteStrategyB());
 			context.ExecuteStrategy();
 		}

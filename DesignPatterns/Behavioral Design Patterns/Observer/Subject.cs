@@ -31,10 +31,7 @@ namespace DesignPatterns.Observer
 		public void Notify()
 		{
 			Console.WriteLine("Subject: Notifying observers...");
-			foreach (var observer in observers)
-			{
-				observer.Update(this);
-			}
+			observers.ForEach(x => x.Update(this));
 		}
 
 		public void SomeBusinessLogic()

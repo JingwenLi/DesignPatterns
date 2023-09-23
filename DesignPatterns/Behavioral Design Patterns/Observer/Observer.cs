@@ -20,7 +20,7 @@ namespace DesignPatterns.Observer
 	{
 		public void Update(ISubject subject)
 		{
-			Console.WriteLine("ConcreteObserverA: Reacted to the event.");
+			Console.WriteLine("ConcreteObserverB: Reacted to the event.");
 		}
 	}
 }

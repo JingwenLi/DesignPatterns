@@ -9,7 +9,7 @@
 			var observerB = new ConcreteObserverB();
 
 			subject.Handlers += observerA.Update;
-			subject.Handlers += observerA.Update;
+			subject.Handlers += observerB.Update;
 
 			subject.Notify();
 		}

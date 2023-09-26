@@ -8,7 +8,8 @@ namespace DesignPatterns.Test
 		[TestMethod]
 		public void TestObserver()
 		{
-			Observer.Client.Run();
+			//Observer.Client.Run();
+			Observer.Event.Client.Run();
 		}
 
 		[TestMethod]

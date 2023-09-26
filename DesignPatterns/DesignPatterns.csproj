@@ -48,5 +48,6 @@
     <EmbeddedResource Include="Structural Design Patterns\Structural Design Patterns - WTG.pptx" />
     <EmbeddedResource Include="Structural Design Patterns\Structural Design Patterns.pptx" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
